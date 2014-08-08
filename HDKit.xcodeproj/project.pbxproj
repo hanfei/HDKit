@@ -16,6 +16,9 @@
 		B91FBA421994A80500927D55 /* libHDKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91FBA2A1994A80500927D55 /* libHDKit.a */; };
 		B91FBA481994A80500927D55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B91FBA461994A80500927D55 /* InfoPlist.strings */; };
 		B91FBA4A1994A80500927D55 /* HDKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B91FBA491994A80500927D55 /* HDKitTests.m */; };
+		B91FBA611994ADFA00927D55 /* UIImage+SnapShot.m in Sources */ = {isa = PBXBuildFile; fileRef = B91FBA601994ADFA00927D55 /* UIImage+SnapShot.m */; };
+		B91FBA631994AE3200927D55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91FBA621994AE3200927D55 /* UIKit.framework */; };
+		B91FBA661994AEF400927D55 /* UIView+FrameShorCut.m in Sources */ = {isa = PBXBuildFile; fileRef = B91FBA651994AEF400927D55 /* UIView+FrameShorCut.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		B91FBA451994A80500927D55 /* HDKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HDKitTests-Info.plist"; sourceTree = "<group>"; };
 		B91FBA471994A80500927D55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B91FBA491994A80500927D55 /* HDKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDKitTests.m; sourceTree = "<group>"; };
+		B91FBA5F1994ADFA00927D55 /* UIImage+SnapShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SnapShot.h"; sourceTree = "<group>"; };
+		B91FBA601994ADFA00927D55 /* UIImage+SnapShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SnapShot.m"; sourceTree = "<group>"; };
+		B91FBA621994AE3200927D55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B91FBA641994AEF400927D55 /* UIView+FrameShorCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameShorCut.h"; sourceTree = "<group>"; };
+		B91FBA651994AEF400927D55 /* UIView+FrameShorCut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameShorCut.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91FBA631994AE3200927D55 /* UIKit.framework in Frameworks */,
 				B91FBA2E1994A80500927D55 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +109,7 @@
 		B91FBA2C1994A80500927D55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B91FBA621994AE3200927D55 /* UIKit.framework */,
 				B91FBA2D1994A80500927D55 /* Foundation.framework */,
 				B91FBA3B1994A80500927D55 /* XCTest.framework */,
 				B91FBA3E1994A80500927D55 /* UIKit.framework */,
@@ -166,6 +176,10 @@
 		B91FBA5B1994ABC600927D55 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				B91FBA5F1994ADFA00927D55 /* UIImage+SnapShot.h */,
+				B91FBA601994ADFA00927D55 /* UIImage+SnapShot.m */,
+				B91FBA641994AEF400927D55 /* UIView+FrameShorCut.h */,
+				B91FBA651994AEF400927D55 /* UIView+FrameShorCut.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -273,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B91FBA351994A80500927D55 /* HDKit.m in Sources */,
+				B91FBA661994AEF400927D55 /* UIView+FrameShorCut.m in Sources */,
+				B91FBA611994ADFA00927D55 /* UIImage+SnapShot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +469,7 @@
 				B91FBA4F1994A80500927D55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B91FBA501994A80500927D55 /* Build configuration list for PBXNativeTarget "HDKitTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +478,7 @@
 				B91FBA521994A80500927D55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
