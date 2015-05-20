@@ -14,6 +14,8 @@
 		B95B2EB21B0C64AE00B1C81E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95B2EB11B0C64AE00B1C81E /* Images.xcassets */; };
 		B95B2EB51B0C64AE00B1C81E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95B2EB31B0C64AE00B1C81E /* LaunchScreen.xib */; };
 		B95B2EC11B0C64AE00B1C81E /* HDKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EC01B0C64AE00B1C81E /* HDKitDemoTests.m */; };
+		B95B2ED21B0C6FCE00B1C81E /* HDKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = B95B2ED11B0C6FCE00B1C81E /* HDKit.strings */; };
+		B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,9 @@
 		B95B2EBF1B0C64AE00B1C81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B95B2EC01B0C64AE00B1C81E /* HDKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDKitDemoTests.m; sourceTree = "<group>"; };
 		B95B2ECF1B0C64CF00B1C81E /* HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDKit.h; sourceTree = "<group>"; };
+		B95B2ED11B0C6FCE00B1C81E /* HDKit.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = HDKit.strings; sourceTree = "<group>"; };
+		B95B2ED31B0C701E00B1C81E /* NSString+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HDKit.h"; sourceTree = "<group>"; };
+		B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +150,8 @@
 		B95B2ECC1B0C64CF00B1C81E /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				B95B2ED31B0C701E00B1C81E /* NSString+HDKit.h */,
+				B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 		B95B2ED01B0C64CF00B1C81E /* Languages */ = {
 			isa = PBXGroup;
 			children = (
+				B95B2ED11B0C6FCE00B1C81E /* HDKit.strings */,
 			);
 			path = Languages;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95B2EB01B0C64AE00B1C81E /* Main.storyboard in Resources */,
+				B95B2ED21B0C6FCE00B1C81E /* HDKit.strings in Resources */,
 				B95B2EB51B0C64AE00B1C81E /* LaunchScreen.xib in Resources */,
 				B95B2EB21B0C64AE00B1C81E /* Images.xcassets in Resources */,
 			);
@@ -272,6 +281,7 @@
 			files = (
 				B95B2EAD1B0C64AE00B1C81E /* ViewController.m in Sources */,
 				B95B2EAA1B0C64AE00B1C81E /* AppDelegate.m in Sources */,
+				B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */,
 				B95B2EA71B0C64AE00B1C81E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
