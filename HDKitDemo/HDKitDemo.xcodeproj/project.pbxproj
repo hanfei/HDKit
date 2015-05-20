@@ -18,6 +18,7 @@
 		B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */; };
 		B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */; };
 		B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */; };
+		B95B2EDE1B0C87E800B1C81E /* NSObject+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EDD1B0C87E800B1C81E /* NSObject+HDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HDKit.m"; sourceTree = "<group>"; };
 		B95B2ED91B0C7F2E00B1C81E /* UIImage+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HDKit.h"; sourceTree = "<group>"; };
 		B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HDKit.m"; sourceTree = "<group>"; };
+		B95B2EDC1B0C87E800B1C81E /* NSObject+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HDKit.h"; sourceTree = "<group>"; };
+		B95B2EDD1B0C87E800B1C81E /* NSObject+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 			children = (
 				B95B2ED31B0C701E00B1C81E /* NSString+HDKit.h */,
 				B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */,
+				B95B2EDC1B0C87E800B1C81E /* NSObject+HDKit.h */,
+				B95B2EDD1B0C87E800B1C81E /* NSObject+HDKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95B2EAD1B0C64AE00B1C81E /* ViewController.m in Sources */,
+				B95B2EDE1B0C87E800B1C81E /* NSObject+HDKit.m in Sources */,
 				B95B2EAA1B0C64AE00B1C81E /* AppDelegate.m in Sources */,
 				B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */,
 				B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */,

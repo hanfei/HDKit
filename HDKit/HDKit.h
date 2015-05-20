@@ -9,6 +9,7 @@
 #define HDKIT_VERSION @"0.0.1"
 #define HDKIT_AUTHOR @"Harvey Ding"
 
+#import "NSObject+HDKit.h"
 #import "NSString+HDKit.h"
 
 
