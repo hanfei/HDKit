@@ -17,6 +17,7 @@
 		B95B2ED21B0C6FCE00B1C81E /* HDKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = B95B2ED11B0C6FCE00B1C81E /* HDKit.strings */; };
 		B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */; };
 		B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */; };
+		B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HDKit.m"; sourceTree = "<group>"; };
 		B95B2ED61B0C7A2F00B1C81E /* UIView+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HDKit.h"; sourceTree = "<group>"; };
 		B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HDKit.m"; sourceTree = "<group>"; };
+		B95B2ED91B0C7F2E00B1C81E /* UIImage+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HDKit.h"; sourceTree = "<group>"; };
+		B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 			children = (
 				B95B2ED61B0C7A2F00B1C81E /* UIView+HDKit.h */,
 				B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */,
+				B95B2ED91B0C7F2E00B1C81E /* UIImage+HDKit.h */,
+				B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				B95B2EAA1B0C64AE00B1C81E /* AppDelegate.m in Sources */,
 				B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */,
 				B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */,
+				B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */,
 				B95B2EA71B0C64AE00B1C81E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

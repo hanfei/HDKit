@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 harvey. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#define HDKIT_VERSION @"0.0.1"
+#define HDKIT_AUTHOR @"Harvey Ding"
 
-//! Project version number for HDKit.
-FOUNDATION_EXPORT double HDKitVersionNumber;
+#import "NSString+HDKit.h"
 
-//! Project version string for HDKit.
-FOUNDATION_EXPORT const unsigned char HDKitVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <HDKit/PublicHeader.h>
+
+#import "UIView+HDKit.h"
+#import "UIImage+HDKit.h"
 
 
