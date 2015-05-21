@@ -19,6 +19,9 @@
 		B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */; };
 		B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */; };
 		B95B2EDE1B0C87E800B1C81E /* NSObject+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EDD1B0C87E800B1C81E /* NSObject+HDKit.m */; };
+		B9A552531B0D83CD0012551D /* NSArray+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552521B0D83CD0012551D /* NSArray+HDKit.m */; };
+		B9A552561B0D85AC0012551D /* NSDictionary+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552551B0D85AC0012551D /* NSDictionary+HDKit.m */; };
+		B9A552691B0D87260012551D /* NSMutableDictionary+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HDKit.m"; sourceTree = "<group>"; };
 		B95B2EDC1B0C87E800B1C81E /* NSObject+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HDKit.h"; sourceTree = "<group>"; };
 		B95B2EDD1B0C87E800B1C81E /* NSObject+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HDKit.m"; sourceTree = "<group>"; };
+		B9A552511B0D83CD0012551D /* NSArray+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HDKit.h"; sourceTree = "<group>"; };
+		B9A552521B0D83CD0012551D /* NSArray+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HDKit.m"; sourceTree = "<group>"; };
+		B9A552541B0D85AC0012551D /* NSDictionary+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HDKit.h"; sourceTree = "<group>"; };
+		B9A552551B0D85AC0012551D /* NSDictionary+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HDKit.m"; sourceTree = "<group>"; };
+		B9A552671B0D87260012551D /* NSMutableDictionary+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+HDKit.h"; sourceTree = "<group>"; };
+		B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+HDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +172,12 @@
 				B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */,
 				B95B2EDC1B0C87E800B1C81E /* NSObject+HDKit.h */,
 				B95B2EDD1B0C87E800B1C81E /* NSObject+HDKit.m */,
+				B9A552511B0D83CD0012551D /* NSArray+HDKit.h */,
+				B9A552521B0D83CD0012551D /* NSArray+HDKit.m */,
+				B9A552541B0D85AC0012551D /* NSDictionary+HDKit.h */,
+				B9A552551B0D85AC0012551D /* NSDictionary+HDKit.m */,
+				B9A552671B0D87260012551D /* NSMutableDictionary+HDKit.h */,
+				B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -294,9 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A552691B0D87260012551D /* NSMutableDictionary+HDKit.m in Sources */,
 				B95B2EAD1B0C64AE00B1C81E /* ViewController.m in Sources */,
+				B9A552531B0D83CD0012551D /* NSArray+HDKit.m in Sources */,
 				B95B2EDE1B0C87E800B1C81E /* NSObject+HDKit.m in Sources */,
 				B95B2EAA1B0C64AE00B1C81E /* AppDelegate.m in Sources */,
+				B9A552561B0D85AC0012551D /* NSDictionary+HDKit.m in Sources */,
 				B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */,
 				B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */,
 				B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */,
@@ -495,6 +513,7 @@
 				B95B2EC61B0C64AE00B1C81E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B95B2EC71B0C64AE00B1C81E /* Build configuration list for PBXNativeTarget "HDKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +522,7 @@
 				B95B2EC91B0C64AE00B1C81E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
