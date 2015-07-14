@@ -64,4 +64,119 @@
     return result;
 }
 
+- (UIImage *)stretched
+{
+    CGSize size = self.size;
+    
+    UIEdgeInsets insets = UIEdgeInsetsMake(truncf(size.height-1)/2, truncf(size.width-1)/2, truncf(size.height-1)/2, truncf(size.width-1)/2);
+    
+    return [self resizableImageWithCapInsets:insets];
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return [image stretched];
+}
+
+- (UIImage *)fixOrientation {
+    if (self.imageOrientation == UIImageOrientationUp) {
+        return self;
+    }
+    
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
+    [self drawInRect:(CGRect){0,0,self.size}];
+    UIImage *normalImg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return normalImg;
+}
+
+- (UIImage *)decompressedImage {
+    if (self.images) {
+        // Do not decode animated images
+        return self;
+    }
+    
+    CGImageRef imageRef = self.CGImage;
+    CGSize imageSize = CGSizeMake(CGImageGetWidth(imageRef), CGImageGetHeight(imageRef));
+    CGRect imageRect = (CGRect){.origin = CGPointZero, .size = imageSize};
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGBitmapInfo bitmapInfo = CGImageGetBitmapInfo(imageRef);
+    
+    int infoMask = (bitmapInfo & kCGBitmapAlphaInfoMask);
+    BOOL anyNonAlpha = (infoMask == kCGImageAlphaNone ||
+                        infoMask == kCGImageAlphaNoneSkipFirst ||
+                        infoMask == kCGImageAlphaNoneSkipLast);
+    
+    // CGBitmapContextCreate doesn't support kCGImageAlphaNone with RGB.
+    // https://developer.apple.com/library/mac/#qa/qa1037/_index.html
+    if (infoMask == kCGImageAlphaNone && CGColorSpaceGetNumberOfComponents(colorSpace) > 1) {
+        // Unset the old alpha info.
+        bitmapInfo &= ~kCGBitmapAlphaInfoMask;
+        
+        // Set noneSkipFirst.
+        bitmapInfo |= kCGImageAlphaNoneSkipFirst;
+    }
+    // Some PNGs tell us they have alpha but only 3 components. Odd.
+    else if (!anyNonAlpha && CGColorSpaceGetNumberOfComponents(colorSpace) == 3) {
+        // Unset the old alpha info.
+        bitmapInfo &= ~kCGBitmapAlphaInfoMask;
+        bitmapInfo |= kCGImageAlphaPremultipliedFirst;
+    }
+    
+    // It calculates the bytes-per-row based on the bitsPerComponent and width arguments.
+    CGContextRef context = CGBitmapContextCreate(NULL,
+                                                 imageSize.width,
+                                                 imageSize.height,
+                                                 CGImageGetBitsPerComponent(imageRef),
+                                                 0,
+                                                 colorSpace,
+                                                 bitmapInfo);
+    CGColorSpaceRelease(colorSpace);
+    
+    // If failed, return undecompressed image
+    if (!context) return self;
+    
+    CGContextDrawImage(context, imageRect, imageRef);
+    CGImageRef decompressedImageRef = CGBitmapContextCreateImage(context);
+    
+    CGContextRelease(context);
+    
+    UIImage *decompressedImage = [UIImage imageWithCGImage:decompressedImageRef scale:self.scale orientation:self.imageOrientation];
+    CGImageRelease(decompressedImageRef);
+    return decompressedImage;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

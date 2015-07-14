@@ -17,4 +17,8 @@
 + (UIImage *)renderImageForAntialiasing:(UIImage *)image withInsets:(UIEdgeInsets)insets;
 + (UIImage *)renderImage:(UIImage *)image margin:(CGFloat)margin color:(UIColor *)color;
 
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+- (UIImage *)fixOrientation;
+- (UIImage *)decompressedImage;
+
 @end

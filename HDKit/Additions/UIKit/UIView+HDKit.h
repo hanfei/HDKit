@@ -21,4 +21,14 @@
 @property (nonatomic) CGPoint origin;
 @property (nonatomic) CGSize  size;
 
+- (UIView *)getFirstResponder;
+- (BOOL)haveSubview:(UIView *)subView;
+
+- (void)setRoundedCornersRadius:(CGFloat)radius;
+- (void)setRoundedCorners:(UIRectCorner)corners radius:(CGFloat)radius;
+- (void)setShadowRadius:(CGFloat)radius;
+- (void)setShadowCorners:(UIRectCorner)corners radius:(CGFloat)radius;
+- (void)pauseAnimation;
+- (void)resumeAnimation;
+
 @end

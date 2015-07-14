@@ -23,6 +23,12 @@
 		B9A552561B0D85AC0012551D /* NSDictionary+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552551B0D85AC0012551D /* NSDictionary+HDKit.m */; };
 		B9A552691B0D87260012551D /* NSMutableDictionary+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */; };
 		B9A5526C1B0DDE570012551D /* NSDate+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A5526B1B0DDE570012551D /* NSDate+HDKit.m */; };
+		BA4467691B54AA5600670260 /* NSAttributedString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4467681B54AA5600670260 /* NSAttributedString+HDKit.m */; };
+		BA44676C1B54B2E800670260 /* NSTimer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44676B1B54B2E800670260 /* NSTimer+HDKit.m */; };
+		BA44676F1B54B58C00670260 /* UIColor+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44676E1B54B58C00670260 /* UIColor+HDKit.m */; };
+		BA5811051B54E3D100B0518E /* UIResponder+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811041B54E3D100B0518E /* UIResponder+HDKit.m */; };
+		BA5811081B54E5C400B0518E /* UIScrollView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */; };
+		BA58110B1B54F4AE00B0518E /* UIViewController+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,18 @@
 		B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+HDKit.m"; sourceTree = "<group>"; };
 		B9A5526A1B0DDE570012551D /* NSDate+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HDKit.h"; sourceTree = "<group>"; };
 		B9A5526B1B0DDE570012551D /* NSDate+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HDKit.m"; sourceTree = "<group>"; };
+		BA4467671B54AA5600670260 /* NSAttributedString+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HDKit.h"; sourceTree = "<group>"; };
+		BA4467681B54AA5600670260 /* NSAttributedString+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HDKit.m"; sourceTree = "<group>"; };
+		BA44676A1B54B2E800670260 /* NSTimer+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HDKit.h"; sourceTree = "<group>"; };
+		BA44676B1B54B2E800670260 /* NSTimer+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HDKit.m"; sourceTree = "<group>"; };
+		BA44676D1B54B58C00670260 /* UIColor+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HDKit.h"; sourceTree = "<group>"; };
+		BA44676E1B54B58C00670260 /* UIColor+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HDKit.m"; sourceTree = "<group>"; };
+		BA5811031B54E3D100B0518E /* UIResponder+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+HDKit.h"; sourceTree = "<group>"; };
+		BA5811041B54E3D100B0518E /* UIResponder+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+HDKit.m"; sourceTree = "<group>"; };
+		BA5811061B54E5C400B0518E /* UIScrollView+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HDKit.h"; sourceTree = "<group>"; };
+		BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HDKit.m"; sourceTree = "<group>"; };
+		BA5811091B54F4AE00B0518E /* UIViewController+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HDKit.h"; sourceTree = "<group>"; };
+		BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +201,10 @@
 				B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */,
 				B9A5526A1B0DDE570012551D /* NSDate+HDKit.h */,
 				B9A5526B1B0DDE570012551D /* NSDate+HDKit.m */,
+				BA4467671B54AA5600670260 /* NSAttributedString+HDKit.h */,
+				BA4467681B54AA5600670260 /* NSAttributedString+HDKit.m */,
+				BA44676A1B54B2E800670260 /* NSTimer+HDKit.h */,
+				BA44676B1B54B2E800670260 /* NSTimer+HDKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -194,6 +216,14 @@
 				B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */,
 				B95B2ED91B0C7F2E00B1C81E /* UIImage+HDKit.h */,
 				B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */,
+				BA44676D1B54B58C00670260 /* UIColor+HDKit.h */,
+				BA44676E1B54B58C00670260 /* UIColor+HDKit.m */,
+				BA5811031B54E3D100B0518E /* UIResponder+HDKit.h */,
+				BA5811041B54E3D100B0518E /* UIResponder+HDKit.m */,
+				BA5811061B54E5C400B0518E /* UIScrollView+HDKit.h */,
+				BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */,
+				BA5811091B54F4AE00B0518E /* UIViewController+HDKit.h */,
+				BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -314,15 +344,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA44676F1B54B58C00670260 /* UIColor+HDKit.m in Sources */,
+				BA4467691B54AA5600670260 /* NSAttributedString+HDKit.m in Sources */,
 				B9A552691B0D87260012551D /* NSMutableDictionary+HDKit.m in Sources */,
 				B95B2EAD1B0C64AE00B1C81E /* ViewController.m in Sources */,
 				B9A552531B0D83CD0012551D /* NSArray+HDKit.m in Sources */,
 				B95B2EDE1B0C87E800B1C81E /* NSObject+HDKit.m in Sources */,
+				BA58110B1B54F4AE00B0518E /* UIViewController+HDKit.m in Sources */,
+				BA5811081B54E5C400B0518E /* UIScrollView+HDKit.m in Sources */,
 				B95B2EAA1B0C64AE00B1C81E /* AppDelegate.m in Sources */,
+				BA44676C1B54B2E800670260 /* NSTimer+HDKit.m in Sources */,
 				B9A552561B0D85AC0012551D /* NSDictionary+HDKit.m in Sources */,
 				B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */,
 				B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */,
 				B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */,
+				BA5811051B54E3D100B0518E /* UIResponder+HDKit.m in Sources */,
 				B95B2EA71B0C64AE00B1C81E /* main.m in Sources */,
 				B9A5526C1B0DDE570012551D /* NSDate+HDKit.m in Sources */,
 			);

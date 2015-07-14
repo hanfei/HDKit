@@ -94,6 +94,33 @@
 }
 
 
+- (NSString *)trimHead {
+    NSInteger i;
+    NSCharacterSet *wnSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    for (i = 0; i < self.length; i++) {
+        if (![wnSet characterIsMember:[self characterAtIndex:i]]) {
+            break;
+        }
+    }
+    return [self substringFromIndex:i];
+}
+
+- (NSString *)trimTail {
+    NSInteger i;
+    NSCharacterSet *wnSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    for (i = self.length - 1; i >= 0; i--) {
+        if (![wnSet characterIsMember:[self characterAtIndex:i]]) {
+            break;
+        }
+    }
+    return [self substringToIndex:(i+1)];
+}
+
+- (NSString *)trimBoth {
+    return [[self trimHead] trimTail];
+}
+
+
 - (NSString *)encodeToBase64 {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     return [data base64EncodedStringWithOptions:0];
@@ -104,24 +131,79 @@
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
-- (NSString *)urlEncode {
-    NSMutableString *output = [NSMutableString string];
-    const unsigned char *source = (const unsigned char *)[self UTF8String];
-    int sourceLen = (int)strlen((const char *)source);
-    for (int i = 0; i < sourceLen; i++) {
-        const unsigned char thisChar = source[i];
-        if (thisChar == ' ') {
-            [output appendString:@"+"];
-        }else if (thisChar == '.' || thisChar == '_' || thisChar == '-' || thisChar == '~' ||
-                  (thisChar >= 'a' && thisChar <= 'z') || (thisChar >= 'A' && thisChar <= 'Z') ||
-                  (thisChar >= 0 && thisChar <= 9)) {
-            [output appendFormat:@"%c",thisChar];
-        }else{
-            [output appendFormat:@"%%%02X",thisChar];
-        }
-    }
-    
-    return [output copy];
+//- (NSString *)urlEncode {
+//    NSMutableString *output = [NSMutableString string];
+//    const unsigned char *source = (const unsigned char *)[self UTF8String];
+//    int sourceLen = (int)strlen((const char *)source);
+//    for (int i = 0; i < sourceLen; i++) {
+//        const unsigned char thisChar = source[i];
+//        if (thisChar == ' ') {
+//            [output appendString:@"+"];
+//        }else if (thisChar == '.' || thisChar == '_' || thisChar == '-' || thisChar == '~' ||
+//                  (thisChar >= 'a' && thisChar <= 'z') || (thisChar >= 'A' && thisChar <= 'Z') ||
+//                  (thisChar >= 0 && thisChar <= 9)) {
+//            [output appendFormat:@"%c",thisChar];
+//        }else{
+//            [output appendFormat:@"%%%02X",thisChar];
+//        }
+//    }
+//    
+//    return [output copy];
+//}
+
+- (NSString *)URLEncodingUTF8String {
+    NSString *result = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL, CFSTR("!*'();:@&=+$,/?%#[]"), kCFStringEncodingUTF8));
+    return result;
 }
+
+- (NSString *)URLDecodingUTF8String {
+    NSString *result = (NSString *)CFBridgingRelease(CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault, (__bridge CFStringRef)self, CFSTR(""), kCFStringEncodingUTF8));
+    return result;
+}
+
+- (CGFloat)heightByFont:(NSFont *)font width:(CGFloat)width {
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                     options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                  attributes:@{NSFontAttributeName : font}
+                                     context:NULL];
+    return rect.size.height;
+}
+
+- (CGFloat)widthByFont:(NSFont *)font {
+    return [self sizeWithAttributes:@{NSFontAttributeName : font}].width;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

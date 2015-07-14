@@ -111,4 +111,125 @@
 }
 
 
+- (UIView *)getFirstResponder {
+    if (self.isFirstResponder) {
+        return self;
+    }
+    
+    for (UIView *subView in self.subviews) {
+        UIView *firstResponder = [subView getFirstResponder];
+        if (firstResponder != nil) {
+            return firstResponder;
+        }
+    }
+    
+    return nil;
+}
+
+- (BOOL)haveSubview:(UIView *)subView {
+    UIView *v = subView;
+    while (v) {
+        if (self == v) {
+            return YES;
+        }
+        
+        v = v.superview;
+    }
+    
+    return NO;
+}
+
+- (void)setRoundedCornersRadius:(CGFloat)radius {
+    [self setRoundedCorners:UIRectCornerAllCorners radius:radius];
+}
+
+- (void)setRoundedCorners:(UIRectCorner)corners radius:(CGFloat)radius {
+    CGRect rect = self.bounds;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect
+                                                   byRoundingCorners:corners
+                                                         cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame = rect;
+    maskLayer.path = maskPath.CGPath;
+    
+    self.layer.mask = maskLayer;
+}
+
+- (void)setShadowRadius:(CGFloat)radius {
+    [self setShadowCorners:UIRectCornerAllCorners radius:radius];
+}
+
+- (void)setShadowCorners:(UIRectCorner)corners radius:(CGFloat)radius {
+    CGRect rect = self.bounds;
+    
+    
+    self.layer.shadowRadius = 2.0f;
+    self.layer.shadowColor = [UIColor darkGrayColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(1.0f, 1.0f);
+    self.layer.shadowOpacity = 1.0f;
+    self.layer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:rect
+                                                   byRoundingCorners:corners
+                                                         cornerRadii:CGSizeMake(radius, radius)] CGPath];
+}
+
+- (void)pauseAnimation {
+    CALayer *layer = self.layer;
+    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    layer.speed = 0.0;
+    layer.timeOffset = pausedTime;
+}
+
+- (void)resumeAnimation {
+    CALayer *layer = self.layer;
+    CFTimeInterval paused = [layer timeOffset];
+    layer.speed = 1.0;
+    layer.timeOffset = 0.0;
+    layer.beginTime = 0.0;
+    CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - paused;
+    layer.beginTime = timeSincePause;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

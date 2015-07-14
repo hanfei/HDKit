@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 harvey. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (HDKit)
 
@@ -19,8 +19,16 @@
 - (BOOL)isEmail;
 + (BOOL)isEmpty:(NSString *)str;
 
+- (NSString *)trimHead;
+- (NSString *)trimTail;
+- (NSString *)trimBoth;
+
 - (NSString *)encodeToBase64;
 - (NSString *)decodeBase64;
-- (NSString *)urlEncode;
 
+- (NSString *)URLEncodingUTF8String;
+- (NSString *)URLDecodingUTF8String;
+
+- (CGFloat)heightByFont:(NSFont *)font width:(CGFloat)width;
+- (CGFloat)widthByFont:(NSFont *)font;
 @end
