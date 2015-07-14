@@ -25,6 +25,7 @@ typedef struct HDDateInformation HDDateInformation;
 - (BOOL)isSameDay:(NSDate *)date;
 - (BOOL)isToday;
 - (NSDate *)dateByAddDays:(NSUInteger)days;
+- (NSInteger)daysBetweenDate:(NSDate *)toDate;
 
 + (NSDate *)dateFromDateInformation:(HDDateInformation)information;
 + (NSDate *)dateFromDateInformation:(HDDateInformation)information timeZone:(NSTimeZone *)timezone;

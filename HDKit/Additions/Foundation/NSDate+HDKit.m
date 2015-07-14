@@ -26,6 +26,13 @@
     return [[NSCalendar currentCalendar] dateByAddingComponents:comp toDate:self options:0];
 }
 
+- (NSInteger)daysBetweenDate:(NSDate *)toDate {
+    NSDate *fromDate;
+    NSDate *toDate;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    [calendar rang]
+}
+
 + (NSDate *)dateFromDateInformation:(HDDateInformation)information timeZone:(NSTimeZone *)timezone {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     if (timezone) {
