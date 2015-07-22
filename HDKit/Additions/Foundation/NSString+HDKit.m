@@ -152,7 +152,7 @@
 //}
 
 - (NSString *)URLEncodingUTF8String {
-    NSString *result = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL, CFSTR("!*'();:@&=+$,/?%#[]"), kCFStringEncodingUTF8));
+    NSString *result = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL, CFSTR("!@#$%&*()+'\";:=,/?[] "), kCFStringEncodingUTF8));
     return result;
 }
 
@@ -161,16 +161,17 @@
     return result;
 }
 
-- (CGFloat)heightByFont:(NSFont *)font width:(CGFloat)width {
+- (CGSize)sizeByFont:(NSFont *)font width:(CGFloat)width {
     CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
                                      options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                   attributes:@{NSFontAttributeName : font}
                                      context:NULL];
-    return rect.size.height;
+    return CGSizeMake(ceil(CGRectGetWidth(rect)), ceil(CGRectGetHeight(rect)));
 }
 
-- (CGFloat)widthByFont:(NSFont *)font {
-    return [self sizeWithAttributes:@{NSFontAttributeName : font}].width;
+- (CGSize)sizeByFont:(NSFont *)font {
+    CGSize size = [self sizeWithAttributes:@{NSFontAttributeName : font}];
+    return CGSizeMake(ceil(size.width), ceil(size.height));
 }
 
 

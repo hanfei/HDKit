@@ -11,9 +11,21 @@
 
 #import "NSObject+HDKit.h"
 #import "NSString+HDKit.h"
+#import "NSArray+HDKit.h"
+#import "NSDictionary+HDKit.h"
+#import "NSMutableDictionary+HDKit.h"
+#import "NSDate+HDKit.h"
+#import "NSAttributedString+HDKit.h"
+#import "NSTimer+HDKit.h"
 
 
 #import "UIView+HDKit.h"
 #import "UIImage+HDKit.h"
+#import "UIColor+HDKit.h"
+#import "UIResponder+HDKit.h"
+#import "UIScrollView+HDKit.h"
+#import "UIViewController+HDKit.h"
+#import "UIDevice+HDKit.h"
+#import "UIScreen+HDKit.h"
 
 

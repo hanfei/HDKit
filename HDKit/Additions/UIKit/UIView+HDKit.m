@@ -7,6 +7,7 @@
 //
 
 #import "UIView+HDKit.h"
+#import <objc/runtime.h>
 
 @implementation UIView (HDKit)
 
@@ -231,5 +232,31 @@
 
 
 
+
+@end
+
+static void * KCall_WebView_Identify = &KCall_WebView_Identify;
+
+
+@implementation UIView (Call)
+
+- (void)callWithPhoneNumber:(NSString *)phone {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return;
+    }
+    
+    UIWebView *webView = objc_getAssociatedObject(self, KCall_WebView_Identify);
+    if (webView == nil) {
+        webView = [[UIWebView alloc] init];
+        objc_setAssociatedObject(self, KCall_WebView_Identify, webView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    
+    if (webView.superview == nil) {
+        [self addSubview:webView];
+    }
+    
+    NSString *callPhoneStr = [NSString stringWithFormat:@"tel://%@",phone];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:callPhoneStr]]];
+}
 
 @end

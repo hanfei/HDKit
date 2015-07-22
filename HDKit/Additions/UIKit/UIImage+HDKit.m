@@ -84,6 +84,30 @@
     return [image stretched];
 }
 
+- (UIImage *)resizedImageWithSize:(CGSize)size {
+    if (size.width <= 0 || size.height <= 0) {
+        return nil;
+    }
+    
+    UIGraphicsBeginImageContext(size);
+    [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *scaledImg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return scaledImg;
+}
+
+- (UIImage *)capturedImaeInRect:(CGRect)rect {
+    if (CGRectIsEmpty(rect)) {
+        return nil;
+    }
+    
+    CGImageRef cutCGImage = CGImageCreateWithImageInRect([self CGImage], rect);
+    UIImage *cutImage = [[UIImage alloc] initWithCGImage:cutCGImage];
+    CGImageRelease(cutCGImage);
+    return cutImage;
+}
+
 - (UIImage *)fixOrientation {
     if (self.imageOrientation == UIImageOrientationUp) {
         return self;
@@ -151,6 +175,101 @@
     UIImage *decompressedImage = [UIImage imageWithCGImage:decompressedImageRef scale:self.scale orientation:self.imageOrientation];
     CGImageRelease(decompressedImageRef);
     return decompressedImage;
+}
+
+
+- (UIImage *)imageWithTintColor:(UIColor *)tintColor {
+    return [self imageWithTintColor:tintColor blendMode:kCGBlendModeDestinationIn];
+}
+
+- (UIImage *)imageWithGradientTintColor:(UIColor *)tintColor {
+    return [self imageWithTintColor:tintColor blendMode:kCGBlendModeOverlay];
+}
+
+- (UIImage *)imageWithTintColor:(UIColor *)tintColor blendMode:(CGBlendMode)blendMode {
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0);
+    [tintColor setFill];
+    CGRect bounds = CGRectMake(0, 0, self.size.width, self.size.height);
+    UIRectFill(bounds);
+    [self drawInRect:bounds blendMode:blendMode alpha:1.0];
+    
+    //redraw to save alpha channel
+    if (blendMode != kCGBlendModeDestinationIn) {
+        [self drawInRect:bounds blendMode:kCGBlendModeDestinationIn alpha:1.0f];
+    }
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+- (UIImage *)grayImage {
+    CGImageRef  imageRef;
+    imageRef = self.CGImage;
+    
+    size_t width  = CGImageGetWidth(imageRef);
+    size_t height = CGImageGetHeight(imageRef);
+    
+    size_t                  bitsPerComponent;
+    bitsPerComponent = CGImageGetBitsPerComponent(imageRef);
+    size_t                  bitsPerPixel;
+    bitsPerPixel = CGImageGetBitsPerPixel(imageRef);
+    size_t                  bytesPerRow;
+    bytesPerRow = CGImageGetBytesPerRow(imageRef);
+    CGColorSpaceRef         colorSpace;
+    colorSpace = CGImageGetColorSpace(imageRef);
+    CGBitmapInfo            bitmapInfo;
+    bitmapInfo = CGImageGetBitmapInfo(imageRef);
+    bool                    shouldInterpolate;
+    shouldInterpolate = CGImageGetShouldInterpolate(imageRef);
+    CGColorRenderingIntent  intent;
+    intent = CGImageGetRenderingIntent(imageRef);
+    CGDataProviderRef   dataProvider;
+    dataProvider = CGImageGetDataProvider(imageRef);
+    CFDataRef   data;
+    UInt8*      buffer;
+    data = CGDataProviderCopyData(dataProvider);
+    buffer = (UInt8*)CFDataGetBytePtr(data);
+    
+    NSUInteger  x, y;
+    for (y = 0; y < height; y++) {
+        for (x = 0; x < width; x++) {
+            UInt8*  tmp;
+            tmp = buffer + y * bytesPerRow + x * 4;
+            
+            UInt8 red,green,blue;
+            red = *(tmp + 0);
+            green = *(tmp + 1);
+            blue = *(tmp + 2);
+            
+            *(tmp + 0) = red*0.299 + green * 0.587 + blue * 0.114;
+            *(tmp + 1) = *(tmp + 0) ;
+            *(tmp + 2) = *(tmp + 0) ;
+        }
+    }
+    
+    CFDataRef   effectedData;
+    effectedData = CFDataCreate(NULL, buffer, CFDataGetLength(data));
+    
+    CGDataProviderRef   effectedDataProvider;
+    effectedDataProvider = CGDataProviderCreateWithCFData(effectedData);
+    
+    CGImageRef  effectedCgImage;
+    UIImage*    effectedImage;
+    effectedCgImage = CGImageCreate(
+                                    width, height,
+                                    bitsPerComponent, bitsPerPixel, bytesPerRow,
+                                    colorSpace, bitmapInfo, effectedDataProvider,
+                                    NULL, shouldInterpolate, intent);
+    effectedImage = [[UIImage alloc] initWithCGImage:effectedCgImage];
+    
+    CGImageRelease(effectedCgImage);
+    CFRelease(effectedDataProvider);
+    CFRelease(effectedData);
+    CFRelease(data);
+    
+    return effectedImage;
 }
 
 

@@ -29,6 +29,6 @@
 - (NSString *)URLEncodingUTF8String;
 - (NSString *)URLDecodingUTF8String;
 
-- (CGFloat)heightByFont:(NSFont *)font width:(CGFloat)width;
-- (CGFloat)widthByFont:(NSFont *)font;
+- (CGSize)sizeByFont:(NSFont *)font width:(CGFloat)width;
+- (CGSize)sizeByFont:(NSFont *)font;
 @end

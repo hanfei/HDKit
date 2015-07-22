@@ -10,6 +10,5 @@
 
 @interface NSObject (HDKit)
 
-- (id)performSelector:(SEL)aSelector withObject:(id)object, ... NS_REQUIRES_NIL_TERMINATION;
 
 @end

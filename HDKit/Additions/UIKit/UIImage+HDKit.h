@@ -16,9 +16,16 @@
 + (UIImage *)renderImageForAntialiasing:(UIImage *)image;
 + (UIImage *)renderImageForAntialiasing:(UIImage *)image withInsets:(UIEdgeInsets)insets;
 + (UIImage *)renderImage:(UIImage *)image margin:(CGFloat)margin color:(UIColor *)color;
-
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+
+- (UIImage *)resizedImageWithSize:(CGSize)size;
+- (UIImage *)capturedImaeInRect:(CGRect)rect;
 - (UIImage *)fixOrientation;
 - (UIImage *)decompressedImage;
+
+- (UIImage *)imageWithTintColor:(UIColor *)tintColor;
+- (UIImage *)imageWithGradientTintColor:(UIColor *)tintColor;
+- (UIImage *)imageWithTintColor:(UIColor *)tintColor blendMode:(CGBlendMode)blendMode;
+- (UIImage *)grayImage;
 
 @end

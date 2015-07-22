@@ -29,6 +29,11 @@
 		BA5811051B54E3D100B0518E /* UIResponder+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811041B54E3D100B0518E /* UIResponder+HDKit.m */; };
 		BA5811081B54E5C400B0518E /* UIScrollView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */; };
 		BA58110B1B54F4AE00B0518E /* UIViewController+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */; };
+		BACF17FA1B5F72BE004C029A /* UIDevice+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17F91B5F72BE004C029A /* UIDevice+HDKit.m */; };
+		BACF17FD1B5F735E004C029A /* UIScreen+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FC1B5F735E004C029A /* UIScreen+HDKit.m */; };
+		BACF18001B5F851F004C029A /* UIButton+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */; };
+		BACF18031B5F88A4004C029A /* UIApplication+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF18021B5F88A4004C029A /* UIApplication+HDKit.m */; };
+		BACF18081B5F8BB1004C029A /* NSBundle+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,18 @@
 		BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HDKit.m"; sourceTree = "<group>"; };
 		BA5811091B54F4AE00B0518E /* UIViewController+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HDKit.h"; sourceTree = "<group>"; };
 		BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HDKit.m"; sourceTree = "<group>"; };
+		BACF17F81B5F72BE004C029A /* UIDevice+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+HDKit.h"; sourceTree = "<group>"; };
+		BACF17F91B5F72BE004C029A /* UIDevice+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+HDKit.m"; sourceTree = "<group>"; };
+		BACF17FB1B5F735E004C029A /* UIScreen+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+HDKit.h"; sourceTree = "<group>"; };
+		BACF17FC1B5F735E004C029A /* UIScreen+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+HDKit.m"; sourceTree = "<group>"; };
+		BACF17FE1B5F851F004C029A /* UIButton+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HDKit.h"; sourceTree = "<group>"; };
+		BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HDKit.m"; sourceTree = "<group>"; };
+		BACF18011B5F88A4004C029A /* UIApplication+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HDKit.h"; sourceTree = "<group>"; };
+		BACF18021B5F88A4004C029A /* UIApplication+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HDKit.m"; sourceTree = "<group>"; };
+		BACF18041B5F8AC3004C029A /* HDGobalMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDGobalMacros.h; sourceTree = "<group>"; };
+		BACF18051B5F8AD9004C029A /* HDPathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPathMacros.h; sourceTree = "<group>"; };
+		BACF18061B5F8BB1004C029A /* NSBundle+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+HDKit.h"; sourceTree = "<group>"; };
+		BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+HDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +222,8 @@
 				BA4467681B54AA5600670260 /* NSAttributedString+HDKit.m */,
 				BA44676A1B54B2E800670260 /* NSTimer+HDKit.h */,
 				BA44676B1B54B2E800670260 /* NSTimer+HDKit.m */,
+				BACF18061B5F8BB1004C029A /* NSBundle+HDKit.h */,
+				BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -224,6 +243,14 @@
 				BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */,
 				BA5811091B54F4AE00B0518E /* UIViewController+HDKit.h */,
 				BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */,
+				BACF17F81B5F72BE004C029A /* UIDevice+HDKit.h */,
+				BACF17F91B5F72BE004C029A /* UIDevice+HDKit.m */,
+				BACF17FB1B5F735E004C029A /* UIScreen+HDKit.h */,
+				BACF17FC1B5F735E004C029A /* UIScreen+HDKit.m */,
+				BACF17FE1B5F851F004C029A /* UIButton+HDKit.h */,
+				BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */,
+				BACF18011B5F88A4004C029A /* UIApplication+HDKit.h */,
+				BACF18021B5F88A4004C029A /* UIApplication+HDKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -231,6 +258,8 @@
 		B95B2ECE1B0C64CF00B1C81E /* HDKit */ = {
 			isa = PBXGroup;
 			children = (
+				BACF18041B5F8AC3004C029A /* HDGobalMacros.h */,
+				BACF18051B5F8AD9004C029A /* HDPathMacros.h */,
 			);
 			path = HDKit;
 			sourceTree = "<group>";
@@ -347,7 +376,10 @@
 				BA44676F1B54B58C00670260 /* UIColor+HDKit.m in Sources */,
 				BA4467691B54AA5600670260 /* NSAttributedString+HDKit.m in Sources */,
 				B9A552691B0D87260012551D /* NSMutableDictionary+HDKit.m in Sources */,
+				BACF17FD1B5F735E004C029A /* UIScreen+HDKit.m in Sources */,
+				BACF18001B5F851F004C029A /* UIButton+HDKit.m in Sources */,
 				B95B2EAD1B0C64AE00B1C81E /* ViewController.m in Sources */,
+				BACF17FA1B5F72BE004C029A /* UIDevice+HDKit.m in Sources */,
 				B9A552531B0D83CD0012551D /* NSArray+HDKit.m in Sources */,
 				B95B2EDE1B0C87E800B1C81E /* NSObject+HDKit.m in Sources */,
 				BA58110B1B54F4AE00B0518E /* UIViewController+HDKit.m in Sources */,
@@ -360,6 +392,8 @@
 				B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */,
 				BA5811051B54E3D100B0518E /* UIResponder+HDKit.m in Sources */,
 				B95B2EA71B0C64AE00B1C81E /* main.m in Sources */,
+				BACF18081B5F8BB1004C029A /* NSBundle+HDKit.m in Sources */,
+				BACF18031B5F88A4004C029A /* UIApplication+HDKit.m in Sources */,
 				B9A5526C1B0DDE570012551D /* NSDate+HDKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

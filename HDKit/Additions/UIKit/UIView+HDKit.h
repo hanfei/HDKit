@@ -32,3 +32,9 @@
 - (void)resumeAnimation;
 
 @end
+
+@interface UIView (Call)
+
+- (void)callWithPhoneNumber:(NSString *)phone;
+
+@end
