@@ -34,6 +34,7 @@
 		BACF18001B5F851F004C029A /* UIButton+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */; };
 		BACF18031B5F88A4004C029A /* UIApplication+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF18021B5F88A4004C029A /* UIApplication+HDKit.m */; };
 		BACF18081B5F8BB1004C029A /* NSBundle+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */; };
+		BAE2A1D71B81D957000E4ED9 /* HDBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE2A1D61B81D957000E4ED9 /* HDBorderView.m */; };
 		BAEF6CA61B71B654008D342E /* NSData+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6CA51B71B654008D342E /* NSData+HDKit.m */; };
 		BAF130CB1B7050CC006E5AA4 /* CALayer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF130CA1B7050CC006E5AA4 /* CALayer+HDKit.m */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,8 @@
 		BACF18051B5F8AD9004C029A /* HDPathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPathMacros.h; sourceTree = "<group>"; };
 		BACF18061B5F8BB1004C029A /* NSBundle+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+HDKit.h"; sourceTree = "<group>"; };
 		BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+HDKit.m"; sourceTree = "<group>"; };
+		BAE2A1D51B81D957000E4ED9 /* HDBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDBorderView.h; sourceTree = "<group>"; };
+		BAE2A1D61B81D957000E4ED9 /* HDBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDBorderView.m; sourceTree = "<group>"; };
 		BAEF6CA41B71B654008D342E /* NSData+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HDKit.h"; sourceTree = "<group>"; };
 		BAEF6CA51B71B654008D342E /* NSData+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HDKit.m"; sourceTree = "<group>"; };
 		BAF130C91B7050CC006E5AA4 /* CALayer+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+HDKit.h"; sourceTree = "<group>"; };
@@ -268,6 +271,7 @@
 		B95B2ECE1B0C64CF00B1C81E /* HDKit */ = {
 			isa = PBXGroup;
 			children = (
+				BAE2A1D41B81D957000E4ED9 /* Views */,
 				BACF18041B5F8AC3004C029A /* HDGobalMacros.h */,
 				BACF18051B5F8AD9004C029A /* HDPathMacros.h */,
 			);
@@ -280,6 +284,15 @@
 				B95B2ED11B0C6FCE00B1C81E /* HDKit.strings */,
 			);
 			path = Languages;
+			sourceTree = "<group>";
+		};
+		BAE2A1D41B81D957000E4ED9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAE2A1D51B81D957000E4ED9 /* HDBorderView.h */,
+				BAE2A1D61B81D957000E4ED9 /* HDBorderView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +416,7 @@
 				B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */,
 				B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */,
 				BA5811051B54E3D100B0518E /* UIResponder+HDKit.m in Sources */,
+				BAE2A1D71B81D957000E4ED9 /* HDBorderView.m in Sources */,
 				B95B2EA71B0C64AE00B1C81E /* main.m in Sources */,
 				BACF18081B5F8BB1004C029A /* NSBundle+HDKit.m in Sources */,
 				BACF18031B5F88A4004C029A /* UIApplication+HDKit.m in Sources */,
