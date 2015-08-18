@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 harvey. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
+#import <UIKit/UIKit.h>
 
 @interface CALayer (HDKit)
 

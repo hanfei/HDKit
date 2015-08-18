@@ -17,4 +17,12 @@
 
 + (UIColor *)colorWithHexColorString:(NSString *)hexString;
 
+- (BOOL)getValueOfRed:(CGFloat *)red green:(CGFloat *)green blue:(CGFloat *)blue alpha:(CGFloat *)alpha;
+
+- (NSString *)hexString;
+
+- (UIColor *)colorByLighten:(CGFloat)light;
+
+- (UIColor *)colorByDarken:(CGFloat)dark;
+
 @end
