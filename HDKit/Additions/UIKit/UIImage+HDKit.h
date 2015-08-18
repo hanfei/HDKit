@@ -28,4 +28,6 @@
 - (UIImage *)imageWithTintColor:(UIColor *)tintColor blendMode:(CGBlendMode)blendMode;
 - (UIImage *)grayImage;
 
+- (UIImage *)imageRotateByRadians:(CGFloat)radians;
+
 @end

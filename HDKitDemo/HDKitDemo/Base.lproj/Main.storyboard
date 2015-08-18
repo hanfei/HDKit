@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b3H-cf-mEC">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pOt-Jb-d2n">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b3H-cf-mEC" firstAttribute="top" secondItem="pOt-Jb-d2n" secondAttribute="bottom" id="4tO-Vv-xlu"/>
+                            <constraint firstAttribute="trailing" secondItem="b3H-cf-mEC" secondAttribute="trailing" id="8qL-Pm-kbe"/>
+                            <constraint firstItem="pOt-Jb-d2n" firstAttribute="height" secondItem="b3H-cf-mEC" secondAttribute="height" id="NZm-LY-6V2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="b3H-cf-mEC" secondAttribute="bottom" id="R3N-5P-lb1"/>
+                            <constraint firstItem="b3H-cf-mEC" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Sac-Qo-6Tf"/>
+                            <constraint firstItem="pOt-Jb-d2n" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="bOQ-P9-Pju"/>
+                            <constraint firstItem="pOt-Jb-d2n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gqN-Xf-t6x"/>
+                            <constraint firstAttribute="trailing" secondItem="pOt-Jb-d2n" secondAttribute="trailing" id="paC-Qa-gzT"/>
+                            <constraint firstItem="b3H-cf-mEC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vBZ-iM-90f"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Sac-Qo-6Tf"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imgView" destination="b3H-cf-mEC" id="t1V-qt-sZX"/>
+                        <outlet property="originalImgView" destination="pOt-Jb-d2n" id="Tda-Gi-wVI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -272,6 +272,23 @@
     return effectedImage;
 }
 
+- (UIImage *)imageRotateByRadians:(CGFloat)radians {
+    UIView *rotatedView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.size.width, self.size.height)];
+    CGAffineTransform t = CGAffineTransformMakeRotation(radians);
+    rotatedView.transform = t;
+    CGSize rotatedSize = rotatedView.frame.size;
+    
+    UIGraphicsBeginImageContextWithOptions(rotatedSize, NO, self.scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, rotatedSize.width / 2, rotatedSize.height / 2);
+    CGContextRotateCTM(context, radians);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawImage(context, CGRectMake(- self.size.width / 2, -self.size.height / 2, self.size.width, self.size.height), self.CGImage);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return img;
+}
 
 
 
