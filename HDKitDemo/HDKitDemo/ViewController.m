@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIImage *img = [UIImage imageNamed:@"test"];
+    UIImage *img = [UIImage testImg];
     _originalImgView.image = img;
     _imgView.image = [img imageRotateByRadians:M_PI / 180.0 * 45.0];
 }

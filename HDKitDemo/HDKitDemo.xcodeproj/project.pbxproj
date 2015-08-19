@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BADE9E181B847C8D0019D53C /* UniversaliOSFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BADE9E191B847C8D0019D53C /* Build configuration list for PBXAggregateTarget "UniversaliOSFramework" */;
+			buildPhases = (
+				BADE9E1C1B847CAA0019D53C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversaliOSFramework;
+			productName = UniversaliOSFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		B95B2EA71B0C64AE00B1C81E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EA61B0C64AE00B1C81E /* main.m */; };
 		B95B2EAA1B0C64AE00B1C81E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EA91B0C64AE00B1C81E /* AppDelegate.m */; };
@@ -34,6 +48,54 @@
 		BACF18001B5F851F004C029A /* UIButton+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */; };
 		BACF18031B5F88A4004C029A /* UIApplication+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF18021B5F88A4004C029A /* UIApplication+HDKit.m */; };
 		BACF18081B5F8BB1004C029A /* NSBundle+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */; };
+		BADE9D721B8453E10019D53C /* NSString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2ED41B0C701E00B1C81E /* NSString+HDKit.m */; };
+		BADE9D731B8453E10019D53C /* NSObject+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EDD1B0C87E800B1C81E /* NSObject+HDKit.m */; };
+		BADE9D741B8453E10019D53C /* NSArray+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552521B0D83CD0012551D /* NSArray+HDKit.m */; };
+		BADE9D751B8453E10019D53C /* NSDictionary+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552551B0D85AC0012551D /* NSDictionary+HDKit.m */; };
+		BADE9D761B8453E20019D53C /* NSMutableDictionary+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */; };
+		BADE9D771B8453E20019D53C /* NSDate+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A5526B1B0DDE570012551D /* NSDate+HDKit.m */; };
+		BADE9D781B8453E20019D53C /* NSAttributedString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4467681B54AA5600670260 /* NSAttributedString+HDKit.m */; };
+		BADE9D791B8453E20019D53C /* NSTimer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44676B1B54B2E800670260 /* NSTimer+HDKit.m */; };
+		BADE9D7A1B8453E20019D53C /* NSBundle+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */; };
+		BADE9D7B1B8453E20019D53C /* NSData+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6CA51B71B654008D342E /* NSData+HDKit.m */; };
+		BADE9D7C1B8453E20019D53C /* CALayer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF130CA1B7050CC006E5AA4 /* CALayer+HDKit.m */; };
+		BADE9D7D1B8453E20019D53C /* UIView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */; };
+		BADE9D7E1B8453E20019D53C /* UIImage+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B2EDA1B0C7F2E00B1C81E /* UIImage+HDKit.m */; };
+		BADE9D7F1B8453E20019D53C /* UIColor+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44676E1B54B58C00670260 /* UIColor+HDKit.m */; };
+		BADE9D801B8453E20019D53C /* UIResponder+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811041B54E3D100B0518E /* UIResponder+HDKit.m */; };
+		BADE9D811B8453E20019D53C /* UIScrollView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */; };
+		BADE9D821B8453E20019D53C /* UIViewController+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */; };
+		BADE9D831B8453E20019D53C /* UIDevice+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17F91B5F72BE004C029A /* UIDevice+HDKit.m */; };
+		BADE9D841B8453E20019D53C /* UIScreen+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FC1B5F735E004C029A /* UIScreen+HDKit.m */; };
+		BADE9D851B8453E20019D53C /* UIButton+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */; };
+		BADE9D861B8453E20019D53C /* UIApplication+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF18021B5F88A4004C029A /* UIApplication+HDKit.m */; };
+		BADE9D871B8453E20019D53C /* HDBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE2A1D61B81D957000E4ED9 /* HDBorderView.m */; };
+		BADE9D891B8454D80019D53C /* NSString+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B95B2ED31B0C701E00B1C81E /* NSString+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D8A1B8454DC0019D53C /* NSObject+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B95B2EDC1B0C87E800B1C81E /* NSObject+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D8B1B8454DF0019D53C /* NSArray+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A552511B0D83CD0012551D /* NSArray+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D8C1B8454E30019D53C /* NSDictionary+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A552541B0D85AC0012551D /* NSDictionary+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D8D1B8454EF0019D53C /* NSMutableDictionary+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A552671B0D87260012551D /* NSMutableDictionary+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D8E1B8454F20019D53C /* NSDate+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A5526A1B0DDE570012551D /* NSDate+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D8F1B8454FA0019D53C /* NSAttributedString+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA4467671B54AA5600670260 /* NSAttributedString+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D901B8455030019D53C /* NSTimer+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA44676A1B54B2E800670260 /* NSTimer+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D911B8455070019D53C /* NSBundle+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BACF18061B5F8BB1004C029A /* NSBundle+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D921B84550A0019D53C /* NSData+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEF6CA41B71B654008D342E /* NSData+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D931B84550F0019D53C /* CALayer+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF130C91B7050CC006E5AA4 /* CALayer+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D941B8455120019D53C /* UIView+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B95B2ED61B0C7A2F00B1C81E /* UIView+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D951B8455150019D53C /* UIImage+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B95B2ED91B0C7F2E00B1C81E /* UIImage+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D961B8455170019D53C /* UIColor+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA44676D1B54B58C00670260 /* UIColor+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D971B84551B0019D53C /* UIResponder+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5811031B54E3D100B0518E /* UIResponder+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D981B84551E0019D53C /* UIScrollView+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5811061B54E5C400B0518E /* UIScrollView+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D991B8455240019D53C /* UIViewController+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5811091B54F4AE00B0518E /* UIViewController+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D9A1B84552B0019D53C /* UIDevice+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BACF17F81B5F72BE004C029A /* UIDevice+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D9B1B84552E0019D53C /* UIScreen+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BACF17FB1B5F735E004C029A /* UIScreen+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D9C1B8455350019D53C /* UIButton+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BACF17FE1B5F851F004C029A /* UIButton+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D9D1B8455390019D53C /* UIApplication+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BACF18011B5F88A4004C029A /* UIApplication+HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D9E1B8455420019D53C /* HDBorderView.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE2A1D51B81D957000E4ED9 /* HDBorderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9D9F1B8455460019D53C /* HDGlobalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BACF18041B5F8AC3004C029A /* HDGlobalMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9DA01B8455500019D53C /* HDPathMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BACF18051B5F8AD9004C029A /* HDPathMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9DA11B8455530019D53C /* HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B95B2ECF1B0C64CF00B1C81E /* HDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADE9DF31B846B320019D53C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95B2EB11B0C64AE00B1C81E /* Images.xcassets */; };
 		BAE2A1D71B81D957000E4ED9 /* HDBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE2A1D61B81D957000E4ED9 /* HDBorderView.m */; };
 		BAEF6CA61B71B654008D342E /* NSData+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6CA51B71B654008D342E /* NSData+HDKit.m */; };
 		BAF130CB1B7050CC006E5AA4 /* CALayer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF130CA1B7050CC006E5AA4 /* CALayer+HDKit.m */; };
@@ -101,10 +163,13 @@
 		BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HDKit.m"; sourceTree = "<group>"; };
 		BACF18011B5F88A4004C029A /* UIApplication+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HDKit.h"; sourceTree = "<group>"; };
 		BACF18021B5F88A4004C029A /* UIApplication+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HDKit.m"; sourceTree = "<group>"; };
-		BACF18041B5F8AC3004C029A /* HDGobalMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDGobalMacros.h; sourceTree = "<group>"; };
+		BACF18041B5F8AC3004C029A /* HDGlobalMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDGlobalMacros.h; sourceTree = "<group>"; };
 		BACF18051B5F8AD9004C029A /* HDPathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPathMacros.h; sourceTree = "<group>"; };
 		BACF18061B5F8BB1004C029A /* NSBundle+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+HDKit.h"; sourceTree = "<group>"; };
 		BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+HDKit.m"; sourceTree = "<group>"; };
+		BADE9D6A1B8450230019D53C /* HDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADE9D6D1B8450230019D53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BADE9E0E1B847A800019D53C /* HDKitResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDKitResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE2A1D51B81D957000E4ED9 /* HDBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDBorderView.h; sourceTree = "<group>"; };
 		BAE2A1D61B81D957000E4ED9 /* HDBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDBorderView.m; sourceTree = "<group>"; };
 		BAEF6CA41B71B654008D342E /* NSData+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HDKit.h"; sourceTree = "<group>"; };
@@ -128,6 +193,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BADE9D671B8450230019D53C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADE9E0B1B847A800019D53C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +216,8 @@
 				B95B2ECA1B0C64CF00B1C81E /* HDKit */,
 				B95B2EA31B0C64AE00B1C81E /* HDKitDemo */,
 				B95B2EBD1B0C64AE00B1C81E /* HDKitDemoTests */,
+				BADE9D6B1B8450230019D53C /* HDKit */,
+				BADE9E0F1B847A800019D53C /* HDKitResource */,
 				B95B2EA21B0C64AE00B1C81E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +227,8 @@
 			children = (
 				B95B2EA11B0C64AE00B1C81E /* HDKitDemo.app */,
 				B95B2EBA1B0C64AE00B1C81E /* HDKitDemoTests.xctest */,
+				BADE9D6A1B8450230019D53C /* HDKit.framework */,
+				BADE9E0E1B847A800019D53C /* HDKitResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,7 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				BAE2A1D41B81D957000E4ED9 /* Views */,
-				BACF18041B5F8AC3004C029A /* HDGobalMacros.h */,
+				BACF18041B5F8AC3004C029A /* HDGlobalMacros.h */,
 				BACF18051B5F8AD9004C029A /* HDPathMacros.h */,
 			);
 			path = HDKit;
@@ -286,6 +369,37 @@
 			path = Languages;
 			sourceTree = "<group>";
 		};
+		BADE9D6B1B8450230019D53C /* HDKit */ = {
+			isa = PBXGroup;
+			children = (
+				BADE9D6C1B8450230019D53C /* Supporting Files */,
+			);
+			path = HDKit;
+			sourceTree = "<group>";
+		};
+		BADE9D6C1B8450230019D53C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BADE9D6D1B8450230019D53C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BADE9E0F1B847A800019D53C /* HDKitResource */ = {
+			isa = PBXGroup;
+			children = (
+				BADE9E101B847A800019D53C /* Supporting Files */,
+			);
+			path = HDKitResource;
+			sourceTree = "<group>";
+		};
+		BADE9E101B847A800019D53C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BAE2A1D41B81D957000E4ED9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +410,41 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BADE9D711B84511A0019D53C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADE9D891B8454D80019D53C /* NSString+HDKit.h in Headers */,
+				BADE9D8A1B8454DC0019D53C /* NSObject+HDKit.h in Headers */,
+				BADE9D8B1B8454DF0019D53C /* NSArray+HDKit.h in Headers */,
+				BADE9D8C1B8454E30019D53C /* NSDictionary+HDKit.h in Headers */,
+				BADE9D8D1B8454EF0019D53C /* NSMutableDictionary+HDKit.h in Headers */,
+				BADE9D8E1B8454F20019D53C /* NSDate+HDKit.h in Headers */,
+				BADE9D8F1B8454FA0019D53C /* NSAttributedString+HDKit.h in Headers */,
+				BADE9D901B8455030019D53C /* NSTimer+HDKit.h in Headers */,
+				BADE9D911B8455070019D53C /* NSBundle+HDKit.h in Headers */,
+				BADE9D921B84550A0019D53C /* NSData+HDKit.h in Headers */,
+				BADE9D931B84550F0019D53C /* CALayer+HDKit.h in Headers */,
+				BADE9D941B8455120019D53C /* UIView+HDKit.h in Headers */,
+				BADE9D951B8455150019D53C /* UIImage+HDKit.h in Headers */,
+				BADE9D961B8455170019D53C /* UIColor+HDKit.h in Headers */,
+				BADE9D971B84551B0019D53C /* UIResponder+HDKit.h in Headers */,
+				BADE9D981B84551E0019D53C /* UIScrollView+HDKit.h in Headers */,
+				BADE9D991B8455240019D53C /* UIViewController+HDKit.h in Headers */,
+				BADE9D9A1B84552B0019D53C /* UIDevice+HDKit.h in Headers */,
+				BADE9D9B1B84552E0019D53C /* UIScreen+HDKit.h in Headers */,
+				BADE9D9C1B8455350019D53C /* UIButton+HDKit.h in Headers */,
+				BADE9D9D1B8455390019D53C /* UIApplication+HDKit.h in Headers */,
+				BADE9D9E1B8455420019D53C /* HDBorderView.h in Headers */,
+				BADE9D9F1B8455460019D53C /* HDGlobalMacros.h in Headers */,
+				BADE9DA01B8455500019D53C /* HDPathMacros.h in Headers */,
+				BADE9DA11B8455530019D53C /* HDKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B95B2EA01B0C64AE00B1C81E /* HDKitDemo */ = {
@@ -333,6 +482,41 @@
 			productReference = B95B2EBA1B0C64AE00B1C81E /* HDKitDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BADE9D691B8450230019D53C /* HDKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BADE9D701B8450230019D53C /* Build configuration list for PBXNativeTarget "HDKit" */;
+			buildPhases = (
+				BADE9D661B8450230019D53C /* Sources */,
+				BADE9D671B8450230019D53C /* Frameworks */,
+				BADE9D681B8450230019D53C /* Resources */,
+				BADE9D711B84511A0019D53C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDKit;
+			productName = HDKit;
+			productReference = BADE9D6A1B8450230019D53C /* HDKit.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BADE9E0D1B847A800019D53C /* HDKitResource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BADE9E121B847A800019D53C /* Build configuration list for PBXNativeTarget "HDKitResource" */;
+			buildPhases = (
+				BADE9E0A1B847A800019D53C /* Sources */,
+				BADE9E0B1B847A800019D53C /* Frameworks */,
+				BADE9E0C1B847A800019D53C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDKitResource;
+			productName = HDKitResource;
+			productReference = BADE9E0E1B847A800019D53C /* HDKitResource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -348,6 +532,15 @@
 					B95B2EB91B0C64AE00B1C81E = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = B95B2EA01B0C64AE00B1C81E;
+					};
+					BADE9D691B8450230019D53C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BADE9E0D1B847A800019D53C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BADE9E181B847C8D0019D53C = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -366,6 +559,9 @@
 			targets = (
 				B95B2EA01B0C64AE00B1C81E /* HDKitDemo */,
 				B95B2EB91B0C64AE00B1C81E /* HDKitDemoTests */,
+				BADE9D691B8450230019D53C /* HDKit */,
+				BADE9E0D1B847A800019D53C /* HDKitResource */,
+				BADE9E181B847C8D0019D53C /* UniversaliOSFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -389,7 +585,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BADE9D681B8450230019D53C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADE9DF31B846B320019D53C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADE9E0C1B847A800019D53C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BADE9E1C1B847CAA0019D53C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#       ============Script Start==============\nif [ \"${ACTION}\" = \"build\" ]\nthen\n# Set the target folders and the final framework product.\nINSTALL_DIR=${SYMROOT}/HDKit.framework\nDEVICE_DIR=${SYMROOT}/Release-iphoneos\nSIMULATOR_DIR=${SYMROOT}/Release-iphonesimulator\n\n# Create and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nrm -rf \"${INSTALL_DIR}\"\nrm -rf \"${INSTALL_DIR}/HDKit\"\n\n# Copy the header files to the final product folder.\nditto \"${DEVICE_DIR}/HDKit.framework/Headers\" \"${INSTALL_DIR}/Headers\"\n\n# Use the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/HDKit.framework/HDKit\" \"${SIMULATOR_DIR}/HDKit.framework/HDKit\" -output \"${INSTALL_DIR}/HDKit\"\nfi\n#       ============Script End==============";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B95B2E9D1B0C64AE00B1C81E /* Sources */ = {
@@ -429,6 +656,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95B2EC11B0C64AE00B1C81E /* HDKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADE9D661B8450230019D53C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADE9D721B8453E10019D53C /* NSString+HDKit.m in Sources */,
+				BADE9D731B8453E10019D53C /* NSObject+HDKit.m in Sources */,
+				BADE9D741B8453E10019D53C /* NSArray+HDKit.m in Sources */,
+				BADE9D751B8453E10019D53C /* NSDictionary+HDKit.m in Sources */,
+				BADE9D761B8453E20019D53C /* NSMutableDictionary+HDKit.m in Sources */,
+				BADE9D771B8453E20019D53C /* NSDate+HDKit.m in Sources */,
+				BADE9D781B8453E20019D53C /* NSAttributedString+HDKit.m in Sources */,
+				BADE9D791B8453E20019D53C /* NSTimer+HDKit.m in Sources */,
+				BADE9D7A1B8453E20019D53C /* NSBundle+HDKit.m in Sources */,
+				BADE9D7B1B8453E20019D53C /* NSData+HDKit.m in Sources */,
+				BADE9D7C1B8453E20019D53C /* CALayer+HDKit.m in Sources */,
+				BADE9D7D1B8453E20019D53C /* UIView+HDKit.m in Sources */,
+				BADE9D7E1B8453E20019D53C /* UIImage+HDKit.m in Sources */,
+				BADE9D7F1B8453E20019D53C /* UIColor+HDKit.m in Sources */,
+				BADE9D801B8453E20019D53C /* UIResponder+HDKit.m in Sources */,
+				BADE9D811B8453E20019D53C /* UIScrollView+HDKit.m in Sources */,
+				BADE9D821B8453E20019D53C /* UIViewController+HDKit.m in Sources */,
+				BADE9D831B8453E20019D53C /* UIDevice+HDKit.m in Sources */,
+				BADE9D841B8453E20019D53C /* UIScreen+HDKit.m in Sources */,
+				BADE9D851B8453E20019D53C /* UIButton+HDKit.m in Sources */,
+				BADE9D861B8453E20019D53C /* UIApplication+HDKit.m in Sources */,
+				BADE9D871B8453E20019D53C /* HDBorderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADE9E0A1B847A800019D53C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +859,99 @@
 			};
 			name = Release;
 		};
+		BADE9D6E1B8450230019D53C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		BADE9D6F1B8450230019D53C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		BADE9E131B847A800019D53C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BADE9E141B847A800019D53C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BADE9E1A1B847C8D0019D53C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BADE9E1B1B847C8D0019D53C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -622,6 +978,33 @@
 			buildConfigurations = (
 				B95B2EC81B0C64AE00B1C81E /* Debug */,
 				B95B2EC91B0C64AE00B1C81E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BADE9D701B8450230019D53C /* Build configuration list for PBXNativeTarget "HDKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADE9D6E1B8450230019D53C /* Debug */,
+				BADE9D6F1B8450230019D53C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BADE9E121B847A800019D53C /* Build configuration list for PBXNativeTarget "HDKitResource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADE9E131B847A800019D53C /* Debug */,
+				BADE9E141B847A800019D53C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BADE9E191B847C8D0019D53C /* Build configuration list for PBXAggregateTarget "UniversaliOSFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADE9E1A1B847C8D0019D53C /* Debug */,
+				BADE9E1B1B847C8D0019D53C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

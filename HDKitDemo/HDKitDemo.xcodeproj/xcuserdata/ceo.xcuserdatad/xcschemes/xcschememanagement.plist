@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HDKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>HDKitDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>HDKitResource.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>UniversaliOSFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +33,26 @@
 			<true/>
 		</dict>
 		<key>B95B2EB91B0C64AE00B1C81E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BADE9D691B8450230019D53C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BADE9DF71B846E890019D53C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BADE9E0D1B847A800019D53C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BADE9E181B847C8D0019D53C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

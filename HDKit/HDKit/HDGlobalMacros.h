@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 harvey. All rights reserved.
 //
 
-#ifndef HDKitDemo_HDGobalMacros_h
-#define HDKitDemo_HDGobalMacros_h
+#ifndef HDKitDemo_HDGlobalMacros_h
+#define HDKitDemo_HDGlobalMacros_h
 
 #pragma mark - DLog
 #if DEBUG
