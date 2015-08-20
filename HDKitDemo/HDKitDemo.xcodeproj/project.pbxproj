@@ -43,6 +43,7 @@
 		BA5811051B54E3D100B0518E /* UIResponder+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811041B54E3D100B0518E /* UIResponder+HDKit.m */; };
 		BA5811081B54E5C400B0518E /* UIScrollView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */; };
 		BA58110B1B54F4AE00B0518E /* UIViewController+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */; };
+		BAA991661B85BC3000518C8A /* NSError+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA991651B85BC3000518C8A /* NSError+HDKit.m */; };
 		BACF17FA1B5F72BE004C029A /* UIDevice+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17F91B5F72BE004C029A /* UIDevice+HDKit.m */; };
 		BACF17FD1B5F735E004C029A /* UIScreen+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FC1B5F735E004C029A /* UIScreen+HDKit.m */; };
 		BACF18001B5F851F004C029A /* UIButton+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */; };
@@ -155,6 +156,8 @@
 		BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HDKit.m"; sourceTree = "<group>"; };
 		BA5811091B54F4AE00B0518E /* UIViewController+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HDKit.h"; sourceTree = "<group>"; };
 		BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HDKit.m"; sourceTree = "<group>"; };
+		BAA991641B85BC3000518C8A /* NSError+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+HDKit.h"; sourceTree = "<group>"; };
+		BAA991651B85BC3000518C8A /* NSError+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+HDKit.m"; sourceTree = "<group>"; };
 		BACF17F81B5F72BE004C029A /* UIDevice+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+HDKit.h"; sourceTree = "<group>"; };
 		BACF17F91B5F72BE004C029A /* UIDevice+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+HDKit.m"; sourceTree = "<group>"; };
 		BACF17FB1B5F735E004C029A /* UIScreen+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+HDKit.h"; sourceTree = "<group>"; };
@@ -318,6 +321,8 @@
 				BACF18071B5F8BB1004C029A /* NSBundle+HDKit.m */,
 				BAEF6CA41B71B654008D342E /* NSData+HDKit.h */,
 				BAEF6CA51B71B654008D342E /* NSData+HDKit.m */,
+				BAA991641B85BC3000518C8A /* NSError+HDKit.h */,
+				BAA991651B85BC3000518C8A /* NSError+HDKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -627,6 +632,7 @@
 				BA4467691B54AA5600670260 /* NSAttributedString+HDKit.m in Sources */,
 				B9A552691B0D87260012551D /* NSMutableDictionary+HDKit.m in Sources */,
 				BACF17FD1B5F735E004C029A /* UIScreen+HDKit.m in Sources */,
+				BAA991661B85BC3000518C8A /* NSError+HDKit.m in Sources */,
 				BACF18001B5F851F004C029A /* UIButton+HDKit.m in Sources */,
 				B95B2EAD1B0C64AE00B1C81E /* ViewController.m in Sources */,
 				BACF17FA1B5F72BE004C029A /* UIDevice+HDKit.m in Sources */,

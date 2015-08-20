@@ -10,11 +10,6 @@
 
 @interface NSString (HDKit)
 
-- (NSString *)MD5;
-- (NSString *)SHA1;
-- (NSString *)SHA256;
-- (NSString *)SHA512;
-
 - (BOOL)hasString:(NSString *)str;
 - (BOOL)isEmail;
 + (BOOL)isEmpty:(NSString *)str;
