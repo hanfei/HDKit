@@ -7,6 +7,7 @@
 //
 
 #import "UIImage+HDKit.h"
+#import <ImageIO/ImageIO.h>
 
 @implementation UIImage (HDKit)
 
@@ -288,6 +289,59 @@
     UIGraphicsEndImageContext();
     
     return img;
+}
+
++ (UIImageOrientation)hd_imageOrientationFromImageData:(NSData *)imageData {
+    UIImageOrientation result = UIImageOrientationUp;
+    CGImageSourceRef imageSource = CGImageSourceCreateWithData((__bridge CFDataRef)imageData, NULL);
+    if (imageSource) {
+        CFDictionaryRef properties = CGImageSourceCopyPropertiesAtIndex(imageSource, 0, NULL);
+        if (properties) {
+            CFTypeRef val;
+            int exifOrientation;
+            val = CFDictionaryGetValue(properties, kCGImagePropertyOrientation);
+            if (val) {
+                CFNumberGetValue(val, kCFNumberIntType, &exifOrientation);
+                result = [self _hdExifOrientationToiOSOrientation:exifOrientation];
+            }
+            CFRelease(properties);
+        }
+        CFRelease(imageSource);
+    }
+    return result;
+}
+
++ (UIImageOrientation)_hdExifOrientationToiOSOrientation:(int)exifOrientation {
+    UIImageOrientation orientation = UIImageOrientationUp;
+    switch (exifOrientation) {
+        case 1:
+            orientation = UIImageOrientationUp;
+            break;
+        case 3:
+            orientation = UIImageOrientationDown;
+            break;
+        case 8:
+            orientation = UIImageOrientationLeft;
+            break;
+        case 6:
+            orientation = UIImageOrientationRight;
+            break;
+        case 2:
+            orientation = UIImageOrientationUpMirrored;
+            break;
+        case 4:
+            orientation = UIImageOrientationDownMirrored;
+            break;
+        case 5:
+            orientation = UIImageOrientationLeftMirrored;
+            break;
+        case 7:
+            orientation = UIImageOrientationRightMirrored;
+            break;
+        default:
+            break;
+    }
+    return orientation;
 }
 
 

@@ -29,5 +29,6 @@
 - (UIImage *)grayImage;
 
 - (UIImage *)imageRotateByRadians:(CGFloat)radians;
++ (UIImageOrientation)hd_imageOrientationFromImageData:(NSData *)imageData;
 
 @end
