@@ -11,6 +11,7 @@
 @interface NSData (HDKit)
 
 + (NSString *)hd_contentTypeForImageData:(NSData *)data;
++ (NSString *)hd_deviceTokenString;
 
 @end
 
@@ -47,6 +48,14 @@ typedef NS_ENUM(NSUInteger, HDCryptoHashFunction) {
 
 - (NSData *)hd_CASTEncryptedDataUsingKey:(id)key error:(NSError **)error;
 - (NSData *)hd_decryptedCASTDataUsingKey:(id)key error:(NSError **)error;
+
+@end
+
+@interface NSData (HDKit_Zip)
+- (NSData *)hd_gzipInflate;
+- (NSData *)hd_gzipDeflate;
+- (NSData *)hd_zlibInflate;
+- (NSData *)hd_zlibDeflate;
 
 
 @end

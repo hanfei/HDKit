@@ -101,12 +101,76 @@
     return result;
 }
 
-- (CGSize)sizeByFont:(NSFont *)font width:(CGFloat)width {
-    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
-                                     options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
-                                  attributes:@{NSFontAttributeName : font}
-                                     context:NULL];
-    return CGSizeMake(ceil(CGRectGetWidth(rect)), ceil(CGRectGetHeight(rect)));
+- (NSString *)stringByEscapingHTML {
+    NSUInteger len = self.length;
+    if (!len) {
+        return self;
+    }
+    
+    unichar *buf = malloc(sizeof(unichar) * len);
+    if (!buf) {
+        return nil;
+    }
+    
+    [self getCharacters:buf range:NSMakeRange(0, len)];
+    NSMutableString *result = [NSMutableString string];
+    for (NSUInteger i = 0; i < len; i++) {
+        unichar c = buf[i];
+        NSString *esc = nil;
+        switch (c) {
+            case 34:
+                esc = @"&quot;";
+                break;
+            case 38:
+                esc = @"&amp;";
+                break;
+            case 39:
+                esc = @"&apos;";
+                break;
+            case 60:
+                esc = @"&lt;";
+                break;
+            case 62:
+                esc = @"&gt;";
+                break;
+            default:
+                break;
+        }
+        
+        if (esc) {
+            [result appendString:esc];
+        }else {
+            CFStringAppendCharacters((__bridge CFMutableStringRef)result, &c, 1);
+        }
+    }
+    free(buf);
+    
+    return result;
+}
+
+- (CGSize)sizeByFont:(UIFont *)font width:(CGFloat)width mode:(NSLineBreakMode)lineBreakMode {
+    CGSize result;
+    if ([self respondsToSelector:@selector(boundingRectWithSize:options:context:)]) {
+        NSMutableDictionary *attr = @{}.mutableCopy;
+        attr[NSFontAttributeName] = font;
+        if (lineBreakMode != NSLineBreakByWordWrapping) {
+            NSMutableParagraphStyle *pStyle = [NSMutableParagraphStyle new];
+            pStyle.lineBreakMode = lineBreakMode;
+            attr[NSParagraphStyleAttributeName] = pStyle;
+        }
+        CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                         options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                      attributes:@{NSFontAttributeName : font}
+                                         context:NULL];
+        result = rect.size;
+    }else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        result = [self sizeWithFont:font constrainedToSize:CGSizeMake(width, CGFLOAT_MAX) lineBreakMode:lineBreakMode];
+#pragma clang diagnostic pop
+    }
+   
+    return CGSizeMake(ceil(result.width), ceil(result.height));
 }
 
 - (CGSize)sizeByFont:(NSFont *)font {

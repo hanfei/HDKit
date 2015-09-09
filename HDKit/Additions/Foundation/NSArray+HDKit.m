@@ -10,6 +10,13 @@
 
 @implementation NSArray (HDKit)
 
+- (id)randomObject {
+    if (self.count > 0) {
+        return self[arc4random_uniform((u_int32_t)self.count)];
+    }
+    return nil;
+}
+
 - (id)safeObjectAtIndex:(NSUInteger)index {
     if (self.count > index) {
         return [self objectAtIndex:index];
@@ -27,13 +34,15 @@
 }
 
 - (NSString *)arrayToJson {
-    NSError *error = nil;
-    NSData *data = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:&error];
-    if (error) {
-        return error.localizedDescription;
-    }else{
+    if ([NSJSONSerialization isValidJSONObject:self]) {
+        NSError *error = nil;
+        NSData *data = [NSJSONSerialization dataWithJSONObject:self options:0 error:&error];
+        if (error) {
+            NSLog(@"array convert to json error: %@",error);
+        }
         return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     }
+    return nil;
 }
 
 - (NSArray *)sortedByKey:(NSString *)key ascending:(BOOL)ascending {

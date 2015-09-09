@@ -191,7 +191,39 @@
 }
 
 
+- (NSData *)hd_snapshotPDF {
+    CGRect bounds = self.bounds;
+    NSMutableData* data = [NSMutableData data];
+    CGDataConsumerRef consumer = CGDataConsumerCreateWithCFData((__bridge CFMutableDataRef)data);
+    CGContextRef context = CGPDFContextCreate(consumer, &bounds, NULL);
+    CGDataConsumerRelease(consumer);
+    if (!context) return nil;
+    CGPDFContextBeginPage(context, NULL);
+    CGContextTranslateCTM(context, 0, bounds.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    [self.layer renderInContext:context];
+    CGPDFContextEndPage(context);
+    CGPDFContextClose(context);
+    CGContextRelease(context);
+    return data;
+}
 
+- (void)hd_removeAllSubViews {
+    NSArray *subViews = [self subviews];
+    for (UIView *sView in subViews) {
+        [sView removeFromSuperview];
+    }
+}
+
+- (UIViewController *)viewController {
+    for (UIView *view = self; view; view = view.superview) {
+        UIResponder *nextResponder = [view nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
 
 
 
@@ -238,9 +270,9 @@
 static void * KCall_WebView_Identify = &KCall_WebView_Identify;
 
 
-@implementation UIView (Call)
+@implementation UIView (HDKit_Call)
 
-- (void)callWithPhoneNumber:(NSString *)phone {
+- (void)hd_callWithPhoneNumber:(NSString *)phone {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         return;
     }
@@ -258,5 +290,38 @@ static void * KCall_WebView_Identify = &KCall_WebView_Identify;
     NSString *callPhoneStr = [NSString stringWithFormat:@"tel://%@",phone];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:callPhoneStr]]];
 }
+
+@end
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+@implementation UIView (HDKit_Debug)
+
+- (void)hd_printAutoLayoutTrace {
+
+#if DEBUG
+    NSLog(@"%@",[self performSelector:@selector(_autolayoutTrace)]);
+#endif
+}
+
+- (void)hd_exerciseAmbiguityInLayoutRepeatedly:(BOOL)recursive {
+#if DEBUG
+    if (self.hasAmbiguousLayout) {
+        [NSTimer scheduledTimerWithTimeInterval:.5
+                                         target:self
+                                       selector:@selector(exerciseAmbiguityInLayout)
+                                       userInfo:nil
+                                        repeats:YES];
+    }
+    
+    if (recursive) {
+        for (UIView *subView in self.subviews) {
+            [subView hd_exerciseAmbiguityInLayoutRepeatedly:YES];
+        }
+    }
+#endif
+    
+}
+#pragma clang diagnostic pop
 
 @end

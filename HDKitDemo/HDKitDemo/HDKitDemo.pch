@@ -1,0 +1,22 @@
+//
+//  HDKitDemo.pch
+//  HDKitDemo
+//
+//  Created by ceo on 8/31/15.
+//  Copyright (c) 2015 harvey. All rights reserved.
+//
+
+#ifndef HDKitDemo_HDKitDemo_pch
+#define HDKitDemo_HDKitDemo_pch
+
+#ifdef DEBUG
+
+#define HDLog(fmt,...) NSLog((@"%s Line(%d) " fmt),  __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
+#else
+
+#define HDLog(...)
+
+#endif
+
+#endif

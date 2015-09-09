@@ -37,6 +37,26 @@
 		B9A552561B0D85AC0012551D /* NSDictionary+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552551B0D85AC0012551D /* NSDictionary+HDKit.m */; };
 		B9A552691B0D87260012551D /* NSMutableDictionary+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */; };
 		B9A5526C1B0DDE570012551D /* NSDate+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A5526B1B0DDE570012551D /* NSDate+HDKit.m */; };
+		BA1C26241B9FCAE400CC29CC /* UIFont+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26231B9FCAE400CC29CC /* UIFont+HDKit.m */; };
+		BA1C26271B9FD08F00CC29CC /* UIBezierPath+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1C26251B9FD08F00CC29CC /* UIBezierPath+HDKit.h */; };
+		BA1C26281B9FD08F00CC29CC /* UIBezierPath+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26261B9FD08F00CC29CC /* UIBezierPath+HDKit.m */; };
+		BA1C26291B9FD08F00CC29CC /* UIBezierPath+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26261B9FD08F00CC29CC /* UIBezierPath+HDKit.m */; };
+		BA1C262A1B9FD09600CC29CC /* UIFont+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26231B9FCAE400CC29CC /* UIFont+HDKit.m */; };
+		BA1C26441B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1C26421B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.h */; };
+		BA1C26451B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26431B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.m */; };
+		BA1C26461B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26431B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.m */; };
+		BA1C264E1B9FD51200CC29CC /* NSParagraphStyle+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1C264C1B9FD51200CC29CC /* NSParagraphStyle+HDKit.h */; };
+		BA1C264F1B9FD51200CC29CC /* NSParagraphStyle+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C264D1B9FD51200CC29CC /* NSParagraphStyle+HDKit.m */; };
+		BA1C26501B9FD51200CC29CC /* NSParagraphStyle+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C264D1B9FD51200CC29CC /* NSParagraphStyle+HDKit.m */; };
+		BA1C26581B9FD54D00CC29CC /* HDTextRunDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1C26561B9FD54D00CC29CC /* HDTextRunDelegate.h */; };
+		BA1C26591B9FD54D00CC29CC /* HDTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26571B9FD54D00CC29CC /* HDTextRunDelegate.m */; };
+		BA1C265A1B9FD54D00CC29CC /* HDTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26571B9FD54D00CC29CC /* HDTextRunDelegate.m */; };
+		BA1C265D1B9FD6F700CC29CC /* HDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1C265B1B9FD6F700CC29CC /* HDWeakProxy.h */; };
+		BA1C265E1B9FD6F700CC29CC /* HDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C265C1B9FD6F700CC29CC /* HDWeakProxy.m */; };
+		BA1C265F1B9FD6F700CC29CC /* HDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C265C1B9FD6F700CC29CC /* HDWeakProxy.m */; };
+		BA1C26621B9FD71300CC29CC /* HDKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1C26601B9FD71300CC29CC /* HDKeychain.h */; };
+		BA1C26631B9FD71300CC29CC /* HDKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26611B9FD71300CC29CC /* HDKeychain.m */; };
+		BA1C26641B9FD71300CC29CC /* HDKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1C26611B9FD71300CC29CC /* HDKeychain.m */; };
 		BA4467691B54AA5600670260 /* NSAttributedString+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4467681B54AA5600670260 /* NSAttributedString+HDKit.m */; };
 		BA44676C1B54B2E800670260 /* NSTimer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44676B1B54B2E800670260 /* NSTimer+HDKit.m */; };
 		BA44676F1B54B58C00670260 /* UIColor+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44676E1B54B58C00670260 /* UIColor+HDKit.m */; };
@@ -44,6 +64,15 @@
 		BA5811081B54E5C400B0518E /* UIScrollView+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5811071B54E5C400B0518E /* UIScrollView+HDKit.m */; };
 		BA58110B1B54F4AE00B0518E /* UIViewController+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */; };
 		BAA991661B85BC3000518C8A /* NSError+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA991651B85BC3000518C8A /* NSError+HDKit.m */; };
+		BAAA16211B997560000231A9 /* HDCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAA161F1B997560000231A9 /* HDCache.h */; };
+		BAAA16221B997560000231A9 /* HDCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA16201B997560000231A9 /* HDCache.m */; };
+		BAAA16231B997560000231A9 /* HDCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA16201B997560000231A9 /* HDCache.m */; };
+		BAAA16261B999943000231A9 /* NSMutableArray+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAA16241B999943000231A9 /* NSMutableArray+HDKit.h */; };
+		BAAA16271B999943000231A9 /* NSMutableArray+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA16251B999943000231A9 /* NSMutableArray+HDKit.m */; };
+		BAAA16281B999943000231A9 /* NSMutableArray+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA16251B999943000231A9 /* NSMutableArray+HDKit.m */; };
+		BAAA162B1B999C72000231A9 /* NSNumber+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAA16291B999C72000231A9 /* NSNumber+HDKit.h */; };
+		BAAA162C1B999C72000231A9 /* NSNumber+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA162A1B999C72000231A9 /* NSNumber+HDKit.m */; };
+		BAAA162D1B999C72000231A9 /* NSNumber+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA162A1B999C72000231A9 /* NSNumber+HDKit.m */; };
 		BACF17FA1B5F72BE004C029A /* UIDevice+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17F91B5F72BE004C029A /* UIDevice+HDKit.m */; };
 		BACF17FD1B5F735E004C029A /* UIScreen+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FC1B5F735E004C029A /* UIScreen+HDKit.m */; };
 		BACF18001B5F851F004C029A /* UIButton+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */; };
@@ -100,6 +129,18 @@
 		BAE2A1D71B81D957000E4ED9 /* HDBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE2A1D61B81D957000E4ED9 /* HDBorderView.m */; };
 		BAEF6CA61B71B654008D342E /* NSData+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6CA51B71B654008D342E /* NSData+HDKit.m */; };
 		BAF130CB1B7050CC006E5AA4 /* CALayer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF130CA1B7050CC006E5AA4 /* CALayer+HDKit.m */; };
+		BAF4C84C1B9E85D90065CAE3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF4C84B1B9E85D90065CAE3 /* libz.dylib */; };
+		BAF4C84F1B9E885D0065CAE3 /* UIControl+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4C84E1B9E885D0065CAE3 /* UIControl+HDKit.m */; };
+		BAF4C8501B9E886D0065CAE3 /* UIControl+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4C84E1B9E885D0065CAE3 /* UIControl+HDKit.m */; };
+		BAF4C8531B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4C8511B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.h */; };
+		BAF4C8541B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4C8521B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.m */; };
+		BAF4C8551B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4C8521B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.m */; };
+		BAF4C8581B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4C8561B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.h */; };
+		BAF4C8591B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4C8571B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.m */; };
+		BAF4C85A1B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4C8571B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.m */; };
+		BAF4C85D1B9EDEBC0065CAE3 /* UITextField+HDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4C85B1B9EDEBC0065CAE3 /* UITextField+HDKit.h */; };
+		BAF4C85E1B9EDEBC0065CAE3 /* UITextField+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4C85C1B9EDEBC0065CAE3 /* UITextField+HDKit.m */; };
+		BAF4C85F1B9EDEBC0065CAE3 /* UITextField+HDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4C85C1B9EDEBC0065CAE3 /* UITextField+HDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +185,22 @@
 		B9A552681B0D87260012551D /* NSMutableDictionary+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+HDKit.m"; sourceTree = "<group>"; };
 		B9A5526A1B0DDE570012551D /* NSDate+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HDKit.h"; sourceTree = "<group>"; };
 		B9A5526B1B0DDE570012551D /* NSDate+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HDKit.m"; sourceTree = "<group>"; };
+		BA1C26221B9FCAE400CC29CC /* UIFont+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+HDKit.h"; sourceTree = "<group>"; };
+		BA1C26231B9FCAE400CC29CC /* UIFont+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+HDKit.m"; sourceTree = "<group>"; };
+		BA1C26251B9FD08F00CC29CC /* UIBezierPath+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+HDKit.h"; sourceTree = "<group>"; };
+		BA1C26261B9FD08F00CC29CC /* UIBezierPath+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+HDKit.m"; sourceTree = "<group>"; };
+		BA1C26411B9FD45800CC29CC /* HDTextDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HDTextDefine.h; path = Utilities/Text/HDTextDefine.h; sourceTree = "<group>"; };
+		BA1C26421B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+HDKit.h"; path = "Utilities/Text/NSMutableAttributedString+HDKit.h"; sourceTree = "<group>"; };
+		BA1C26431B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+HDKit.m"; path = "Utilities/Text/NSMutableAttributedString+HDKit.m"; sourceTree = "<group>"; };
+		BA1C264C1B9FD51200CC29CC /* NSParagraphStyle+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSParagraphStyle+HDKit.h"; path = "Utilities/Text/NSParagraphStyle+HDKit.h"; sourceTree = "<group>"; };
+		BA1C264D1B9FD51200CC29CC /* NSParagraphStyle+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSParagraphStyle+HDKit.m"; path = "Utilities/Text/NSParagraphStyle+HDKit.m"; sourceTree = "<group>"; };
+		BA1C26561B9FD54D00CC29CC /* HDTextRunDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDTextRunDelegate.h; path = Utilities/Text/HDTextRunDelegate.h; sourceTree = "<group>"; };
+		BA1C26571B9FD54D00CC29CC /* HDTextRunDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDTextRunDelegate.m; path = Utilities/Text/HDTextRunDelegate.m; sourceTree = "<group>"; };
+		BA1C265B1B9FD6F700CC29CC /* HDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDWeakProxy.h; path = Utilities/HDWeakProxy.h; sourceTree = "<group>"; };
+		BA1C265C1B9FD6F700CC29CC /* HDWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDWeakProxy.m; path = Utilities/HDWeakProxy.m; sourceTree = "<group>"; };
+		BA1C26601B9FD71300CC29CC /* HDKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDKeychain.h; path = Utilities/HDKeychain.h; sourceTree = "<group>"; };
+		BA1C26611B9FD71300CC29CC /* HDKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDKeychain.m; path = Utilities/HDKeychain.m; sourceTree = "<group>"; };
+		BA41F23E1B93F3B60070D7F4 /* HDKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDKitDemo.pch; sourceTree = "<group>"; };
 		BA4467671B54AA5600670260 /* NSAttributedString+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HDKit.h"; sourceTree = "<group>"; };
 		BA4467681B54AA5600670260 /* NSAttributedString+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HDKit.m"; sourceTree = "<group>"; };
 		BA44676A1B54B2E800670260 /* NSTimer+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HDKit.h"; sourceTree = "<group>"; };
@@ -158,6 +215,12 @@
 		BA58110A1B54F4AE00B0518E /* UIViewController+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HDKit.m"; sourceTree = "<group>"; };
 		BAA991641B85BC3000518C8A /* NSError+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+HDKit.h"; sourceTree = "<group>"; };
 		BAA991651B85BC3000518C8A /* NSError+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+HDKit.m"; sourceTree = "<group>"; };
+		BAAA161F1B997560000231A9 /* HDCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDCache.h; path = Utilities/HDCache.h; sourceTree = "<group>"; };
+		BAAA16201B997560000231A9 /* HDCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDCache.m; path = Utilities/HDCache.m; sourceTree = "<group>"; };
+		BAAA16241B999943000231A9 /* NSMutableArray+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+HDKit.h"; sourceTree = "<group>"; };
+		BAAA16251B999943000231A9 /* NSMutableArray+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+HDKit.m"; sourceTree = "<group>"; };
+		BAAA16291B999C72000231A9 /* NSNumber+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+HDKit.h"; sourceTree = "<group>"; };
+		BAAA162A1B999C72000231A9 /* NSNumber+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+HDKit.m"; sourceTree = "<group>"; };
 		BACF17F81B5F72BE004C029A /* UIDevice+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+HDKit.h"; sourceTree = "<group>"; };
 		BACF17F91B5F72BE004C029A /* UIDevice+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+HDKit.m"; sourceTree = "<group>"; };
 		BACF17FB1B5F735E004C029A /* UIScreen+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+HDKit.h"; sourceTree = "<group>"; };
@@ -177,8 +240,17 @@
 		BAE2A1D61B81D957000E4ED9 /* HDBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDBorderView.m; sourceTree = "<group>"; };
 		BAEF6CA41B71B654008D342E /* NSData+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HDKit.h"; sourceTree = "<group>"; };
 		BAEF6CA51B71B654008D342E /* NSData+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HDKit.m"; sourceTree = "<group>"; };
-		BAF130C91B7050CC006E5AA4 /* CALayer+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+HDKit.h"; sourceTree = "<group>"; };
-		BAF130CA1B7050CC006E5AA4 /* CALayer+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HDKit.m"; sourceTree = "<group>"; };
+		BAF130C91B7050CC006E5AA4 /* CALayer+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CALayer+HDKit.h"; path = "UIKit/CALayer+HDKit.h"; sourceTree = "<group>"; };
+		BAF130CA1B7050CC006E5AA4 /* CALayer+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CALayer+HDKit.m"; path = "UIKit/CALayer+HDKit.m"; sourceTree = "<group>"; };
+		BAF4C84B1B9E85D90065CAE3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BAF4C84D1B9E885D0065CAE3 /* UIControl+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+HDKit.h"; sourceTree = "<group>"; };
+		BAF4C84E1B9E885D0065CAE3 /* UIControl+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+HDKit.m"; sourceTree = "<group>"; };
+		BAF4C8511B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HDKit.h"; sourceTree = "<group>"; };
+		BAF4C8521B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HDKit.m"; sourceTree = "<group>"; };
+		BAF4C8561B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+HDKit.h"; sourceTree = "<group>"; };
+		BAF4C8571B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+HDKit.m"; sourceTree = "<group>"; };
+		BAF4C85B1B9EDEBC0065CAE3 /* UITextField+HDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+HDKit.h"; sourceTree = "<group>"; };
+		BAF4C85C1B9EDEBC0065CAE3 /* UITextField+HDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +258,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF4C84C1B9E85D90065CAE3 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +312,7 @@
 		B95B2EA31B0C64AE00B1C81E /* HDKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BAF4C84B1B9E85D90065CAE3 /* libz.dylib */,
 				B95B2EA81B0C64AE00B1C81E /* AppDelegate.h */,
 				B95B2EA91B0C64AE00B1C81E /* AppDelegate.m */,
 				B95B2EAB1B0C64AE00B1C81E /* ViewController.h */,
@@ -256,6 +330,7 @@
 			children = (
 				B95B2EA51B0C64AE00B1C81E /* Info.plist */,
 				B95B2EA61B0C64AE00B1C81E /* main.m */,
+				BA41F23E1B93F3B60070D7F4 /* HDKitDemo.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -292,6 +367,7 @@
 		B95B2ECB1B0C64CF00B1C81E /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				BA1C262B1B9FD12E00CC29CC /* Quartz */,
 				B95B2ECC1B0C64CF00B1C81E /* Foundation */,
 				B95B2ECD1B0C64CF00B1C81E /* UIKit */,
 			);
@@ -323,6 +399,10 @@
 				BAEF6CA51B71B654008D342E /* NSData+HDKit.m */,
 				BAA991641B85BC3000518C8A /* NSError+HDKit.h */,
 				BAA991651B85BC3000518C8A /* NSError+HDKit.m */,
+				BAAA16241B999943000231A9 /* NSMutableArray+HDKit.h */,
+				BAAA16251B999943000231A9 /* NSMutableArray+HDKit.m */,
+				BAAA16291B999C72000231A9 /* NSNumber+HDKit.h */,
+				BAAA162A1B999C72000231A9 /* NSNumber+HDKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -330,8 +410,6 @@
 		B95B2ECD1B0C64CF00B1C81E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				BAF130C91B7050CC006E5AA4 /* CALayer+HDKit.h */,
-				BAF130CA1B7050CC006E5AA4 /* CALayer+HDKit.m */,
 				B95B2ED61B0C7A2F00B1C81E /* UIView+HDKit.h */,
 				B95B2ED71B0C7A2F00B1C81E /* UIView+HDKit.m */,
 				B95B2ED91B0C7F2E00B1C81E /* UIImage+HDKit.h */,
@@ -352,6 +430,18 @@
 				BACF17FF1B5F851F004C029A /* UIButton+HDKit.m */,
 				BACF18011B5F88A4004C029A /* UIApplication+HDKit.h */,
 				BACF18021B5F88A4004C029A /* UIApplication+HDKit.m */,
+				BAF4C84D1B9E885D0065CAE3 /* UIControl+HDKit.h */,
+				BAF4C84E1B9E885D0065CAE3 /* UIControl+HDKit.m */,
+				BAF4C8511B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.h */,
+				BAF4C8521B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.m */,
+				BAF4C8561B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.h */,
+				BAF4C8571B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.m */,
+				BAF4C85B1B9EDEBC0065CAE3 /* UITextField+HDKit.h */,
+				BAF4C85C1B9EDEBC0065CAE3 /* UITextField+HDKit.m */,
+				BA1C26221B9FCAE400CC29CC /* UIFont+HDKit.h */,
+				BA1C26231B9FCAE400CC29CC /* UIFont+HDKit.m */,
+				BA1C26251B9FD08F00CC29CC /* UIBezierPath+HDKit.h */,
+				BA1C26261B9FD08F00CC29CC /* UIBezierPath+HDKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -359,6 +449,7 @@
 		B95B2ECE1B0C64CF00B1C81E /* HDKit */ = {
 			isa = PBXGroup;
 			children = (
+				BAAA161E1B997527000231A9 /* Utilities */,
 				BAE2A1D41B81D957000E4ED9 /* Views */,
 				BACF18041B5F8AC3004C029A /* HDGlobalMacros.h */,
 				BACF18051B5F8AD9004C029A /* HDPathMacros.h */,
@@ -372,6 +463,43 @@
 				B95B2ED11B0C6FCE00B1C81E /* HDKit.strings */,
 			);
 			path = Languages;
+			sourceTree = "<group>";
+		};
+		BA1C262B1B9FD12E00CC29CC /* Quartz */ = {
+			isa = PBXGroup;
+			children = (
+				BAF130C91B7050CC006E5AA4 /* CALayer+HDKit.h */,
+				BAF130CA1B7050CC006E5AA4 /* CALayer+HDKit.m */,
+			);
+			name = Quartz;
+			sourceTree = "<group>";
+		};
+		BA1C262C1B9FD3CA00CC29CC /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				BA1C26411B9FD45800CC29CC /* HDTextDefine.h */,
+				BA1C26421B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.h */,
+				BA1C26431B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.m */,
+				BA1C264C1B9FD51200CC29CC /* NSParagraphStyle+HDKit.h */,
+				BA1C264D1B9FD51200CC29CC /* NSParagraphStyle+HDKit.m */,
+				BA1C26561B9FD54D00CC29CC /* HDTextRunDelegate.h */,
+				BA1C26571B9FD54D00CC29CC /* HDTextRunDelegate.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		BAAA161E1B997527000231A9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BA1C262C1B9FD3CA00CC29CC /* Text */,
+				BAAA161F1B997560000231A9 /* HDCache.h */,
+				BAAA16201B997560000231A9 /* HDCache.m */,
+				BA1C265B1B9FD6F700CC29CC /* HDWeakProxy.h */,
+				BA1C265C1B9FD6F700CC29CC /* HDWeakProxy.m */,
+				BA1C26601B9FD71300CC29CC /* HDKeychain.h */,
+				BA1C26611B9FD71300CC29CC /* HDKeychain.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		BADE9D6B1B8450230019D53C /* HDKit */ = {
@@ -426,23 +554,35 @@
 				BADE9D8B1B8454DF0019D53C /* NSArray+HDKit.h in Headers */,
 				BADE9D8C1B8454E30019D53C /* NSDictionary+HDKit.h in Headers */,
 				BADE9D8D1B8454EF0019D53C /* NSMutableDictionary+HDKit.h in Headers */,
+				BAF4C8581B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.h in Headers */,
 				BADE9D8E1B8454F20019D53C /* NSDate+HDKit.h in Headers */,
 				BADE9D8F1B8454FA0019D53C /* NSAttributedString+HDKit.h in Headers */,
 				BADE9D901B8455030019D53C /* NSTimer+HDKit.h in Headers */,
 				BADE9D911B8455070019D53C /* NSBundle+HDKit.h in Headers */,
 				BADE9D921B84550A0019D53C /* NSData+HDKit.h in Headers */,
 				BADE9D931B84550F0019D53C /* CALayer+HDKit.h in Headers */,
+				BAAA162B1B999C72000231A9 /* NSNumber+HDKit.h in Headers */,
 				BADE9D941B8455120019D53C /* UIView+HDKit.h in Headers */,
+				BA1C26581B9FD54D00CC29CC /* HDTextRunDelegate.h in Headers */,
+				BAAA16261B999943000231A9 /* NSMutableArray+HDKit.h in Headers */,
+				BA1C264E1B9FD51200CC29CC /* NSParagraphStyle+HDKit.h in Headers */,
+				BAF4C85D1B9EDEBC0065CAE3 /* UITextField+HDKit.h in Headers */,
 				BADE9D951B8455150019D53C /* UIImage+HDKit.h in Headers */,
 				BADE9D961B8455170019D53C /* UIColor+HDKit.h in Headers */,
 				BADE9D971B84551B0019D53C /* UIResponder+HDKit.h in Headers */,
 				BADE9D981B84551E0019D53C /* UIScrollView+HDKit.h in Headers */,
 				BADE9D991B8455240019D53C /* UIViewController+HDKit.h in Headers */,
+				BA1C26271B9FD08F00CC29CC /* UIBezierPath+HDKit.h in Headers */,
 				BADE9D9A1B84552B0019D53C /* UIDevice+HDKit.h in Headers */,
+				BA1C26441B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.h in Headers */,
 				BADE9D9B1B84552E0019D53C /* UIScreen+HDKit.h in Headers */,
+				BAAA16211B997560000231A9 /* HDCache.h in Headers */,
 				BADE9D9C1B8455350019D53C /* UIButton+HDKit.h in Headers */,
+				BA1C265D1B9FD6F700CC29CC /* HDWeakProxy.h in Headers */,
+				BAF4C8531B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.h in Headers */,
 				BADE9D9D1B8455390019D53C /* UIApplication+HDKit.h in Headers */,
 				BADE9D9E1B8455420019D53C /* HDBorderView.h in Headers */,
+				BA1C26621B9FD71300CC29CC /* HDKeychain.h in Headers */,
 				BADE9D9F1B8455460019D53C /* HDGlobalMacros.h in Headers */,
 				BADE9DA01B8455500019D53C /* HDPathMacros.h in Headers */,
 				BADE9DA11B8455530019D53C /* HDKit.h in Headers */,
@@ -628,19 +768,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1C26451B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.m in Sources */,
 				BA44676F1B54B58C00670260 /* UIColor+HDKit.m in Sources */,
 				BA4467691B54AA5600670260 /* NSAttributedString+HDKit.m in Sources */,
 				B9A552691B0D87260012551D /* NSMutableDictionary+HDKit.m in Sources */,
 				BACF17FD1B5F735E004C029A /* UIScreen+HDKit.m in Sources */,
 				BAA991661B85BC3000518C8A /* NSError+HDKit.m in Sources */,
+				BA1C26241B9FCAE400CC29CC /* UIFont+HDKit.m in Sources */,
 				BACF18001B5F851F004C029A /* UIButton+HDKit.m in Sources */,
+				BAAA16271B999943000231A9 /* NSMutableArray+HDKit.m in Sources */,
 				B95B2EAD1B0C64AE00B1C81E /* ViewController.m in Sources */,
 				BACF17FA1B5F72BE004C029A /* UIDevice+HDKit.m in Sources */,
+				BA1C264F1B9FD51200CC29CC /* NSParagraphStyle+HDKit.m in Sources */,
+				BAF4C85E1B9EDEBC0065CAE3 /* UITextField+HDKit.m in Sources */,
 				B9A552531B0D83CD0012551D /* NSArray+HDKit.m in Sources */,
+				BAF4C8591B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.m in Sources */,
 				B95B2EDE1B0C87E800B1C81E /* NSObject+HDKit.m in Sources */,
 				BA58110B1B54F4AE00B0518E /* UIViewController+HDKit.m in Sources */,
+				BAF4C84F1B9E885D0065CAE3 /* UIControl+HDKit.m in Sources */,
 				BA5811081B54E5C400B0518E /* UIScrollView+HDKit.m in Sources */,
 				BAEF6CA61B71B654008D342E /* NSData+HDKit.m in Sources */,
+				BAAA16221B997560000231A9 /* HDCache.m in Sources */,
+				BAAA162C1B999C72000231A9 /* NSNumber+HDKit.m in Sources */,
 				B95B2EAA1B0C64AE00B1C81E /* AppDelegate.m in Sources */,
 				BAF130CB1B7050CC006E5AA4 /* CALayer+HDKit.m in Sources */,
 				BA44676C1B54B2E800670260 /* NSTimer+HDKit.m in Sources */,
@@ -648,12 +797,17 @@
 				B95B2ED51B0C701E00B1C81E /* NSString+HDKit.m in Sources */,
 				B95B2ED81B0C7A2F00B1C81E /* UIView+HDKit.m in Sources */,
 				B95B2EDB1B0C7F2E00B1C81E /* UIImage+HDKit.m in Sources */,
+				BAF4C8541B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.m in Sources */,
 				BA5811051B54E3D100B0518E /* UIResponder+HDKit.m in Sources */,
 				BAE2A1D71B81D957000E4ED9 /* HDBorderView.m in Sources */,
 				B95B2EA71B0C64AE00B1C81E /* main.m in Sources */,
 				BACF18081B5F8BB1004C029A /* NSBundle+HDKit.m in Sources */,
 				BACF18031B5F88A4004C029A /* UIApplication+HDKit.m in Sources */,
+				BA1C26591B9FD54D00CC29CC /* HDTextRunDelegate.m in Sources */,
+				BA1C26281B9FD08F00CC29CC /* UIBezierPath+HDKit.m in Sources */,
 				B9A5526C1B0DDE570012551D /* NSDate+HDKit.m in Sources */,
+				BA1C265E1B9FD6F700CC29CC /* HDWeakProxy.m in Sources */,
+				BA1C26631B9FD71300CC29CC /* HDKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,22 +826,36 @@
 				BADE9D721B8453E10019D53C /* NSString+HDKit.m in Sources */,
 				BADE9D731B8453E10019D53C /* NSObject+HDKit.m in Sources */,
 				BADE9D741B8453E10019D53C /* NSArray+HDKit.m in Sources */,
+				BA1C26641B9FD71300CC29CC /* HDKeychain.m in Sources */,
+				BAF4C8551B9ED9E80065CAE3 /* UIBarButtonItem+HDKit.m in Sources */,
+				BA1C26461B9FD4B900CC29CC /* NSMutableAttributedString+HDKit.m in Sources */,
+				BAF4C85F1B9EDEBC0065CAE3 /* UITextField+HDKit.m in Sources */,
+				BA1C262A1B9FD09600CC29CC /* UIFont+HDKit.m in Sources */,
 				BADE9D751B8453E10019D53C /* NSDictionary+HDKit.m in Sources */,
 				BADE9D761B8453E20019D53C /* NSMutableDictionary+HDKit.m in Sources */,
+				BA1C265F1B9FD6F700CC29CC /* HDWeakProxy.m in Sources */,
 				BADE9D771B8453E20019D53C /* NSDate+HDKit.m in Sources */,
+				BA1C26291B9FD08F00CC29CC /* UIBezierPath+HDKit.m in Sources */,
 				BADE9D781B8453E20019D53C /* NSAttributedString+HDKit.m in Sources */,
 				BADE9D791B8453E20019D53C /* NSTimer+HDKit.m in Sources */,
 				BADE9D7A1B8453E20019D53C /* NSBundle+HDKit.m in Sources */,
+				BA1C26501B9FD51200CC29CC /* NSParagraphStyle+HDKit.m in Sources */,
 				BADE9D7B1B8453E20019D53C /* NSData+HDKit.m in Sources */,
+				BAAA16281B999943000231A9 /* NSMutableArray+HDKit.m in Sources */,
+				BAAA162D1B999C72000231A9 /* NSNumber+HDKit.m in Sources */,
 				BADE9D7C1B8453E20019D53C /* CALayer+HDKit.m in Sources */,
+				BAF4C85A1B9EDB190065CAE3 /* UIGestureRecognizer+HDKit.m in Sources */,
 				BADE9D7D1B8453E20019D53C /* UIView+HDKit.m in Sources */,
+				BAAA16231B997560000231A9 /* HDCache.m in Sources */,
 				BADE9D7E1B8453E20019D53C /* UIImage+HDKit.m in Sources */,
 				BADE9D7F1B8453E20019D53C /* UIColor+HDKit.m in Sources */,
 				BADE9D801B8453E20019D53C /* UIResponder+HDKit.m in Sources */,
 				BADE9D811B8453E20019D53C /* UIScrollView+HDKit.m in Sources */,
 				BADE9D821B8453E20019D53C /* UIViewController+HDKit.m in Sources */,
+				BA1C265A1B9FD54D00CC29CC /* HDTextRunDelegate.m in Sources */,
 				BADE9D831B8453E20019D53C /* UIDevice+HDKit.m in Sources */,
 				BADE9D841B8453E20019D53C /* UIScreen+HDKit.m in Sources */,
+				BAF4C8501B9E886D0065CAE3 /* UIControl+HDKit.m in Sources */,
 				BADE9D851B8453E20019D53C /* UIButton+HDKit.m in Sources */,
 				BADE9D861B8453E20019D53C /* UIApplication+HDKit.m in Sources */,
 				BADE9D871B8453E20019D53C /* HDBorderView.m in Sources */,
@@ -815,6 +983,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = HDKitDemo/HDKitDemo.pch;
 				INFOPLIST_FILE = HDKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -825,6 +994,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = HDKitDemo/HDKitDemo.pch;
 				INFOPLIST_FILE = HDKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

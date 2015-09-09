@@ -31,4 +31,26 @@
 - (UIImage *)imageRotateByRadians:(CGFloat)radians;
 + (UIImageOrientation)hd_imageOrientationFromImageData:(NSData *)imageData;
 
++ (UIImage *)hd_imageWithPDF:(id)dataOrPath;
++ (UIImage *)hd_imageWithPDF:(id)dataOrPath size:(CGSize)size;
+
+- (UIColor *)hd_colorAtPoint:(CGPoint)point;
+- (BOOL)hd_hasAlphaChannel;
+- (UIImage *)hd_imageByResizeToSize:(CGSize)size contentMode:(UIViewContentMode)contentMode;
+- (UIImage *)hd_imageByRoundCornerRadius:(CGFloat)radius;
+- (UIImage *)hd_flipHorizontal:(BOOL)horizontal vertical:(BOOL)vertical;
+
+- (UIImage *)hd_imageByGrayscale;
+- (UIImage *)hd_imageByBlurSoft;
+- (UIImage *)hd_imageByBlurLight;
+- (UIImage *)hd_imageByBlurExtraLight;
+- (UIImage *)hd_imageByBlurDark;
+- (UIImage *)hd_imageByBlurWithTint:(UIColor *)tintColor;
+
+@end
+
+@interface UIImage (HDKit_GIF)
+
++ (UIImage *)hd_animatedGIFWithData:(NSData *)data;
+
 @end

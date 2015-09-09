@@ -10,6 +10,7 @@
 
 @interface NSArray (HDKit)
 
+- (id)randomObject;
 - (id)safeObjectAtIndex:(NSUInteger)index;
 - (NSArray *)reversedArray;
 - (NSString *)arrayToJson;

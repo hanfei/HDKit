@@ -33,7 +33,7 @@
 static NSString *const NSTimerPauseDate = @"NSTimerPauseDate";
 static NSString *const NSTimerPreviousFireDate = @"NSTimerPreviousFireDate";
 
--(void)pauseTimer {
+- (void)pauseTimer {
     
     objc_setAssociatedObject(self, (__bridge const void *)(NSTimerPauseDate), [NSDate date], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, (__bridge const void *)(NSTimerPreviousFireDate), self.fireDate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -41,7 +41,7 @@ static NSString *const NSTimerPreviousFireDate = @"NSTimerPreviousFireDate";
     self.fireDate = [NSDate distantFuture];
 }
 
--(void)resumeTimer {
+- (void)resumeTimer {
     
     NSDate *pauseDate = objc_getAssociatedObject(self, (__bridge const void *)NSTimerPauseDate);
     NSDate *previousFireDate = objc_getAssociatedObject(self, (__bridge const void *)NSTimerPreviousFireDate);

@@ -23,7 +23,8 @@
 
 - (NSString *)URLEncodingUTF8String;
 - (NSString *)URLDecodingUTF8String;
+- (NSString *)stringByEscapingHTML;
 
-- (CGSize)sizeByFont:(NSFont *)font width:(CGFloat)width;
-- (CGSize)sizeByFont:(NSFont *)font;
+- (CGSize)sizeByFont:(UIFont *)font width:(CGFloat)width mode:(NSLineBreakMode)lineBreakMode;
+- (CGSize)sizeByFont:(UIFont *)font;
 @end

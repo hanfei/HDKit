@@ -10,5 +10,15 @@
 
 @interface NSObject (HDKit)
 
++ (BOOL)swizzleInstanceMethod:(SEL)originalSel with:(SEL)newSel;
++ (BOOL)swizzleClassMethod:(SEL)originalSel with:(SEL)newSel;
+
+@end
+
+@interface NSObject (HDKit_KVO)
+
+- (void)addObserverBlockForKeyPath:(NSString *)keyPath block:(void (^)(__weak id obj, id oldVal, id newVal))block;
+- (void)removeObserverBlocksForKeyPath:(NSString *)keyPath;
+- (void)removeObserverBlocks;
 
 @end

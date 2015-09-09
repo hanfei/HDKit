@@ -21,6 +21,8 @@
 @property (nonatomic) CGPoint origin;
 @property (nonatomic) CGSize  size;
 
+@property (nonatomic, readonly) UIViewController *viewController;
+
 - (UIView *)getFirstResponder;
 - (BOOL)haveSubview:(UIView *)subView;
 
@@ -31,10 +33,20 @@
 - (void)pauseAnimation;
 - (void)resumeAnimation;
 
+- (void)hd_removeAllSubViews;
+- (NSData *)hd_snapshotPDF;
+
 @end
 
-@interface UIView (Call)
+@interface UIView (HDKit_Call)
 
-- (void)callWithPhoneNumber:(NSString *)phone;
+- (void)hd_callWithPhoneNumber:(NSString *)phone;
+
+@end
+
+@interface UIView (HDKit_Debug)
+
+- (void)hd_printAutoLayoutTrace;
+- (void)hd_exerciseAmbiguityInLayoutRepeatedly:(BOOL)recursive;
 
 @end

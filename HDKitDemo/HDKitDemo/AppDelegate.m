@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, assign) UIBackgroundTaskIdentifier backgroundTaskId;
+
 @end
 
 @implementation AppDelegate
@@ -26,8 +28,14 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    __weak typeof(self) wself = self;
+    self.backgroundTaskId = [application beginBackgroundTaskWithExpirationHandler:^{
+        __strong __typeof (wself) sself = wself;
+        if (sself) {
+            [application endBackgroundTask:sself.backgroundTaskId];
+            sself.backgroundTaskId = UIBackgroundTaskInvalid;
+        }
+    }];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
