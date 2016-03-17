@@ -11,8 +11,9 @@
 @interface NSString (HDKit)
 
 - (BOOL)hasString:(NSString *)str;
-- (BOOL)isEmail;
+- (BOOL)isVaildEmail;
 + (BOOL)isEmpty:(NSString *)str;
++ (BOOL)isVaildURLString:(NSString *)urlStr;
 
 - (NSString *)trimHead;
 - (NSString *)trimTail;

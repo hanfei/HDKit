@@ -47,4 +47,7 @@
 
 + (void)gotoAppStoreUserRevicesPageWithApp:(NSString *)appId;
 
+- (void)openSettings;
+
+
 @end

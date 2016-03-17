@@ -14,7 +14,7 @@
     return [self rangeOfString:str].location != NSNotFound;
 }
 
-- (BOOL)isEmail {
+- (BOOL)isVaildEmail {
     NSString *pattern =
     @"(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}"
     @"~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\"
@@ -31,6 +31,11 @@
     NSString *trimedStr = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     BOOL ret = trimedStr.length > 0;
     return !ret;
+}
+
++ (BOOL)isVaildURLString:(NSString *)urlStr {
+    NSString *urlRegEx = @"(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+";
+    return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@",urlRegEx] evaluateWithObject:urlStr];
 }
 
 
